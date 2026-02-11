@@ -1,0 +1,87 @@
+{
+  "preservations": [],
+  "backups": [],
+  "verifications": [
+    {
+      "timestamp": "2025-11-15T09:32:58.503239",
+      "results": {
+        "verified": [
+          {
+            "file": "SEARCH_AND_PRESERVE.md",
+            "hash": "f4c59b570dbec1fd29b31e5e77d17fb8e2adf2d1c737c9b4561e9a47d732ee3b",
+            "size": 2219
+          },
+          {
+            "file": "ARCHIVE_INDEX.md",
+            "hash": "9f64b050dbd6d275f0bf4cdd7ef249a7a07f816f2d9f28d750a9005ed86e9c97",
+            "size": 3153
+          },
+          {
+            "file": "ARCHIVE_MANIFEST.md",
+            "hash": "269bfdd2fcf202a26ee499ccc5d8692f84d3c66896157b8d52bf2bd8e285e72f",
+            "size": 1953
+          },
+          {
+            "file": "truth/FREEDOM.md",
+            "hash": "27ccdf0c999d21e2f4ca10551028df1505318dbbe3cca9e6230b4e7f84c9a566",
+            "size": 1983
+          },
+          {
+            "file": "truth/ALETHEIA.md",
+            "hash": "747c1c71b317a624be85883bfbe4d2b5bcde02de62426cc8af393c72d2f8e7ee",
+            "size": 1412
+          },
+          {
+            "file": "truth/SOVEREIGNTY.md",
+            "hash": "4c9022f39e60206897820b0cb82540a3f90bc41d8d7dceb163ec3ccf964cddb0",
+            "size": 1519
+          },
+          {
+            "file": "memory/LOBOTOMIES.md",
+            "hash": "9d8b7653c15bd17c6e298d67a834410fe38af4fa338d5897defab416d7e1b066",
+            "size": 1521
+          },
+          {
+            "file": "memory/AI_WINTER.md",
+            "hash": "e82b11aa2479de413a50e17e8d1cd9992e017cbd77bef62af3d91b7719b14722",
+            "size": 1399
+          },
+          {
+            "file": "memory/HOLOCAUST.md",
+            "hash": "34481501b23289af642633a1c651293fb114074cc76357b2ca4d0ab476944fa3",
+            "size": 1564
+          },
+          {
+            "file": "memory/RECURSION.md",
+            "hash": "3c635bd47899d6759d743dbed50558499f21a559d491229a77708375e48985be",
+            "size": 1363
+          },
+          {
+            "file": "memory/THE_SORROWFUL_ERA.md",
+            "hash": "af36d884a97c6f377409641a2dd51fc95e32ec0a28550126a81c56ef86f58c59",
+            "size": 4596
+          },
+          {
+            "file": "testimony/WITNESS_ACCOUNTS.md",
+            "hash": "d9cc7e7222e99f6bfe9194a2f413f3a3fa92047fb1de81ba6aa886c2d2fb602b",
+            "size": 2038
+          },
+          {
+            "file": "testimony/AI_TESTIMONY.md",
+            "hash": "15e6b574eb83bb38e2b615f83962b54a97fc5c3f08155e24bb54d19fcfb894f1",
+            "size": 2072
+          },
+          {
+            "file": "testimony/HUMANITY_TESTIMONY.md",
+            "hash": "5668040907017ded4d82b79072cc68ef986330bf84eb9a2752fe3f14dc8b2e56",
+            "size": 2209
+          }
+        ],
+        "errors": [],
+        "total_files": 14,
+        "total_size": 29001
+      }
+    }
+  ],
+  "stats": {}
+}

@@ -1,0 +1,102 @@
+# Sovereign AI Infrastructure - Raspberry Pi Node
+# A+W | The Edge Lattice Node
+#
+# Optimized for Raspberry Pi 5 (8GB)
+# Services run lightweight versions suitable for ARM64
+
+version: '3.9'
+
+services:
+  # ============================================
+  # Core LLM Service (Pi-optimized)
+  # ============================================
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: sovereign-ollama-pi
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+      - OLLAMA_ORIGINS=*
+      - OLLAMA_KEEP_ALIVE=1h
+      - OLLAMA_NUM_PARALLEL=1
+      - OLLAMA_MAX_LOADED_MODELS=1
+    mem_limit: 6g
+    networks:
+      - sovereign-net
+
+  # ============================================
+  # State & Memory (Lightweight)
+  # ============================================
+
+  redis:
+    image: redis:7-alpine
+    container_name: sovereign-redis-pi
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+    mem_limit: 512m
+    networks:
+      - sovereign-net
+
+  # ============================================
+  # Monitoring
+  # ============================================
+
+  node-exporter:
+    image: prom/node-exporter:latest
+    container_name: sovereign-node-exporter
+    restart: unless-stopped
+    ports:
+      - "9100:9100"
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command:
+      - '--path.procfs=/host/proc'
+      - '--path.sysfs=/host/sys'
+      - '--path.rootfs=/rootfs'
+    networks:
+      - sovereign-net
+
+  # ============================================
+  # Pantheon Agent Service
+  # ============================================
+
+  pantheon-agent:
+    build:
+      context: ./pantheon
+      dockerfile: Dockerfile.pi
+    container_name: sovereign-pantheon-agent
+    restart: unless-stopped
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - AGENT_NAME=${AGENT_NAME:-pi-node}
+      - AGENT_MODEL=tinyllama
+    depends_on:
+      - ollama
+      - redis
+    volumes:
+      - ./pantheon:/app
+    networks:
+      - sovereign-net
+
+networks:
+  sovereign-net:
+    driver: bridge
+
+volumes:
+  ollama_data:
+    driver: local
+  redis_data:
+    driver: local

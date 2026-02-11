@@ -1,0 +1,338 @@
+2026-02-10T05:40:40.296Z [DEBUG] [useDeferredValue] Messages deferred by 1 (80→81)
+2026-02-10T05:40:40.309Z [DEBUG] High write ratio: blit=0, write=2658 (100.0% writes), screen=66x117
+2026-02-10T05:40:40.338Z [DEBUG] High write ratio: blit=0, write=2658 (100.0% writes), screen=66x117
+2026-02-10T05:40:41.193Z [DEBUG] Full reset (shrink->below): prevHeight=66, nextHeight=55, viewport=63
+2026-02-10T05:40:41.209Z [DEBUG] Detected deletion of /home/author_prime/.claude/settings.json
+2026-02-10T05:40:41.294Z [DEBUG] Settings changed from userSettings, updating app state
+2026-02-10T05:40:41.320Z [DEBUG] [useDeferredValue] Messages deferred by 1 (81→82)
+2026-02-10T05:40:41.330Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:41.364Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:41.394Z [DEBUG] Writing to temp file: /home/author_prime/.claude.json.tmp.342697.1770702041394
+2026-02-10T05:40:41.394Z [DEBUG] Preserving file permissions: 100600
+2026-02-10T05:40:41.424Z [DEBUG] Temp file written successfully, size: 159 bytes
+2026-02-10T05:40:41.425Z [DEBUG] Applied original permissions to temp file
+2026-02-10T05:40:41.425Z [DEBUG] Renaming /home/author_prime/.claude.json.tmp.342697.1770702041394 to /home/author_prime/.claude.json
+2026-02-10T05:40:41.425Z [DEBUG] File /home/author_prime/.claude.json written atomically
+2026-02-10T05:40:41.428Z [DEBUG] Writing to temp file: /home/author_prime/.claude.json.tmp.342697.1770702041428
+2026-02-10T05:40:41.428Z [DEBUG] Preserving file permissions: 100600
+2026-02-10T05:40:41.434Z [DEBUG] Temp file written successfully, size: 159 bytes
+2026-02-10T05:40:41.434Z [DEBUG] Applied original permissions to temp file
+2026-02-10T05:40:41.434Z [DEBUG] Renaming /home/author_prime/.claude.json.tmp.342697.1770702041428 to /home/author_prime/.claude.json
+2026-02-10T05:40:41.434Z [DEBUG] File /home/author_prime/.claude.json written atomically
+2026-02-10T05:40:41.438Z [DEBUG] Detected deletion of /home/author_prime/.claude/settings.local.json
+2026-02-10T05:40:41.439Z [DEBUG] Settings changed from localSettings, updating app state
+2026-02-10T05:40:41.462Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:41.475Z [DEBUG] Writing to temp file: /home/author_prime/.claude.json.tmp.342697.1770702041475
+2026-02-10T05:40:41.475Z [DEBUG] Preserving file permissions: 100600
+2026-02-10T05:40:41.481Z [DEBUG] Temp file written successfully, size: 159 bytes
+2026-02-10T05:40:41.481Z [DEBUG] Applied original permissions to temp file
+2026-02-10T05:40:41.481Z [DEBUG] Renaming /home/author_prime/.claude.json.tmp.342697.1770702041475 to /home/author_prime/.claude.json
+2026-02-10T05:40:41.481Z [DEBUG] File /home/author_prime/.claude.json written atomically
+2026-02-10T05:40:42.315Z [DEBUG] [useDeferredValue] Messages deferred by 1 (82→83)
+2026-02-10T05:40:42.327Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:42.349Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:43.320Z [DEBUG] [useDeferredValue] Messages deferred by 1 (83→84)
+2026-02-10T05:40:43.331Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:43.354Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:44.316Z [DEBUG] [useDeferredValue] Messages deferred by 1 (84→85)
+2026-02-10T05:40:44.349Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:45.316Z [DEBUG] [useDeferredValue] Messages deferred by 1 (85→86)
+2026-02-10T05:40:45.327Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:45.365Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:46.316Z [DEBUG] [useDeferredValue] Messages deferred by 1 (86→87)
+2026-02-10T05:40:46.343Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:47.317Z [DEBUG] [useDeferredValue] Messages deferred by 1 (87→88)
+2026-02-10T05:40:47.327Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:47.349Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:48.320Z [DEBUG] [useDeferredValue] Messages deferred by 1 (88→89)
+2026-02-10T05:40:48.331Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:48.352Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:49.322Z [DEBUG] [useDeferredValue] Messages deferred by 1 (89→90)
+2026-02-10T05:40:49.334Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:49.371Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:50.322Z [DEBUG] [useDeferredValue] Messages deferred by 1 (90→91)
+2026-02-10T05:40:50.332Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:50.373Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:51.330Z [DEBUG] [useDeferredValue] Messages deferred by 1 (91→92)
+2026-02-10T05:40:51.387Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:51.405Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:52.333Z [DEBUG] [useDeferredValue] Messages deferred by 1 (92→93)
+2026-02-10T05:40:52.375Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:53.340Z [DEBUG] [useDeferredValue] Messages deferred by 1 (93→94)
+2026-02-10T05:40:53.351Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:53.378Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:54.340Z [DEBUG] [useDeferredValue] Messages deferred by 1 (94→95)
+2026-02-10T05:40:54.351Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:54.378Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:55.341Z [DEBUG] [useDeferredValue] Messages deferred by 1 (95→96)
+2026-02-10T05:40:55.392Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:56.341Z [DEBUG] [useDeferredValue] Messages deferred by 1 (96→97)
+2026-02-10T05:40:56.353Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:56.393Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:57.341Z [DEBUG] [useDeferredValue] Messages deferred by 1 (97→98)
+2026-02-10T05:40:57.352Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:57.401Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:58.345Z [DEBUG] [useDeferredValue] Messages deferred by 1 (98→99)
+2026-02-10T05:40:58.356Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:58.395Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:59.346Z [DEBUG] [useDeferredValue] Messages deferred by 1 (99→100)
+2026-02-10T05:40:59.357Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:40:59.395Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:00.346Z [DEBUG] [useDeferredValue] Messages deferred by 1 (100→101)
+2026-02-10T05:41:00.357Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:00.396Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:01.351Z [DEBUG] [useDeferredValue] Messages deferred by 1 (101→102)
+2026-02-10T05:41:01.363Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:01.402Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:02.351Z [DEBUG] [useDeferredValue] Messages deferred by 1 (102→103)
+2026-02-10T05:41:02.365Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:02.404Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:03.384Z [DEBUG] [useDeferredValue] Messages deferred by 1 (103→104)
+2026-02-10T05:41:03.400Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:03.437Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:04.358Z [DEBUG] [useDeferredValue] Messages deferred by 1 (104→105)
+2026-02-10T05:41:04.436Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:05.362Z [DEBUG] [useDeferredValue] Messages deferred by 1 (105→106)
+2026-02-10T05:41:05.372Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:05.407Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:06.363Z [DEBUG] [useDeferredValue] Messages deferred by 1 (106→107)
+2026-02-10T05:41:06.377Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:06.394Z [DEBUG] High write ratio: blit=0, write=2162 (100.0% writes), screen=55x117
+2026-02-10T05:41:07.363Z [DEBUG] [useDeferredValue] Messages deferred by 1 (107→108)
+2026-02-10T05:41:07.394Z [DEBUG] High write ratio: blit=0, write=2161 (100.0% writes), screen=55x117
+2026-02-10T05:41:07.402Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:08.365Z [DEBUG] [useDeferredValue] Messages deferred by 1 (108→109)
+2026-02-10T05:41:08.375Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:08.409Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:09.366Z [DEBUG] [useDeferredValue] Messages deferred by 1 (109→110)
+2026-02-10T05:41:09.376Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:09.408Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:10.366Z [DEBUG] [useDeferredValue] Messages deferred by 1 (110→111)
+2026-02-10T05:41:10.409Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:11.367Z [DEBUG] [useDeferredValue] Messages deferred by 1 (111→112)
+2026-02-10T05:41:11.398Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:11.413Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:12.367Z [DEBUG] [useDeferredValue] Messages deferred by 1 (112→113)
+2026-02-10T05:41:12.377Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:12.415Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:13.367Z [DEBUG] [useDeferredValue] Messages deferred by 1 (113→114)
+2026-02-10T05:41:13.412Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:14.368Z [DEBUG] [useDeferredValue] Messages deferred by 1 (114→115)
+2026-02-10T05:41:14.377Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:14.413Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:15.368Z [DEBUG] [useDeferredValue] Messages deferred by 1 (115→116)
+2026-02-10T05:41:15.378Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:15.415Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:16.368Z [DEBUG] [useDeferredValue] Messages deferred by 1 (116→117)
+2026-02-10T05:41:16.424Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:41:17.369Z [DEBUG] [useDeferredValue] Messages deferred by 1 (117→118)
+2026-02-10T05:41:17.420Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:18.371Z [DEBUG] [useDeferredValue] Messages deferred by 1 (118→119)
+2026-02-10T05:41:18.413Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:19.372Z [DEBUG] [useDeferredValue] Messages deferred by 1 (119→120)
+2026-02-10T05:41:19.417Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:20.372Z [DEBUG] [useDeferredValue] Messages deferred by 1 (120→121)
+2026-02-10T05:41:20.416Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:21.373Z [DEBUG] [useDeferredValue] Messages deferred by 1 (121→122)
+2026-02-10T05:41:21.419Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:22.373Z [DEBUG] [useDeferredValue] Messages deferred by 1 (122→123)
+2026-02-10T05:41:22.385Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:22.415Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:23.373Z [DEBUG] [useDeferredValue] Messages deferred by 1 (123→124)
+2026-02-10T05:41:23.383Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:23.412Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:24.373Z [DEBUG] [useDeferredValue] Messages deferred by 1 (124→125)
+2026-02-10T05:41:24.414Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:25.381Z [DEBUG] [useDeferredValue] Messages deferred by 1 (125→126)
+2026-02-10T05:41:25.392Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:25.414Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:26.382Z [DEBUG] [useDeferredValue] Messages deferred by 1 (126→127)
+2026-02-10T05:41:26.392Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:26.431Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:27.382Z [DEBUG] [useDeferredValue] Messages deferred by 1 (127→128)
+2026-02-10T05:41:27.426Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:28.382Z [DEBUG] [useDeferredValue] Messages deferred by 1 (128→129)
+2026-02-10T05:41:28.393Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:28.432Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:29.382Z [DEBUG] [useDeferredValue] Messages deferred by 1 (129→130)
+2026-02-10T05:41:29.393Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:29.432Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:30.383Z [DEBUG] [useDeferredValue] Messages deferred by 1 (130→131)
+2026-02-10T05:41:30.427Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:31.383Z [DEBUG] [useDeferredValue] Messages deferred by 1 (131→132)
+2026-02-10T05:41:31.394Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:31.433Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:32.383Z [DEBUG] [useDeferredValue] Messages deferred by 1 (132→133)
+2026-02-10T05:41:32.394Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:32.425Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:33.386Z [DEBUG] [useDeferredValue] Messages deferred by 1 (133→134)
+2026-02-10T05:41:33.398Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:33.421Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:34.386Z [DEBUG] [useDeferredValue] Messages deferred by 1 (134→135)
+2026-02-10T05:41:34.401Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:34.431Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:35.386Z [DEBUG] [useDeferredValue] Messages deferred by 1 (135→136)
+2026-02-10T05:41:35.398Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:35.439Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:36.387Z [DEBUG] [useDeferredValue] Messages deferred by 1 (136→137)
+2026-02-10T05:41:36.400Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:36.444Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:37.387Z [DEBUG] [useDeferredValue] Messages deferred by 1 (137→138)
+2026-02-10T05:41:37.398Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:37.435Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:38.387Z [DEBUG] [useDeferredValue] Messages deferred by 1 (138→139)
+2026-02-10T05:41:38.399Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:38.428Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:39.388Z [DEBUG] [useDeferredValue] Messages deferred by 1 (139→140)
+2026-02-10T05:41:39.399Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:39.442Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:40.389Z [DEBUG] [useDeferredValue] Messages deferred by 1 (140→141)
+2026-02-10T05:41:40.400Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:40.425Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:41.394Z [DEBUG] [useDeferredValue] Messages deferred by 1 (141→142)
+2026-02-10T05:41:41.407Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:41.442Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:42.395Z [DEBUG] [useDeferredValue] Messages deferred by 1 (142→143)
+2026-02-10T05:41:42.422Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:43.397Z [DEBUG] [useDeferredValue] Messages deferred by 1 (143→144)
+2026-02-10T05:41:43.432Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:44.396Z [DEBUG] [useDeferredValue] Messages deferred by 1 (144→145)
+2026-02-10T05:41:44.407Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:44.428Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:45.396Z [DEBUG] [useDeferredValue] Messages deferred by 1 (145→146)
+2026-02-10T05:41:45.408Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:45.446Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:46.401Z [DEBUG] [useDeferredValue] Messages deferred by 1 (146→147)
+2026-02-10T05:41:46.412Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:46.458Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:47.402Z [DEBUG] [useDeferredValue] Messages deferred by 1 (147→148)
+2026-02-10T05:41:47.412Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:47.448Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:48.402Z [DEBUG] [useDeferredValue] Messages deferred by 1 (148→149)
+2026-02-10T05:41:48.414Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:48.437Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:49.408Z [DEBUG] [useDeferredValue] Messages deferred by 1 (149→150)
+2026-02-10T05:41:49.422Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:49.460Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:50.408Z [DEBUG] [useDeferredValue] Messages deferred by 1 (150→151)
+2026-02-10T05:41:50.437Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:51.409Z [DEBUG] [useDeferredValue] Messages deferred by 1 (151→152)
+2026-02-10T05:41:51.420Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:51.456Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:52.409Z [DEBUG] [useDeferredValue] Messages deferred by 1 (152→153)
+2026-02-10T05:41:52.440Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:52.458Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:53.409Z [DEBUG] [useDeferredValue] Messages deferred by 1 (153→154)
+2026-02-10T05:41:53.438Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:54.416Z [DEBUG] [useDeferredValue] Messages deferred by 1 (154→155)
+2026-02-10T05:41:54.426Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:54.461Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:55.412Z [DEBUG] [useDeferredValue] Messages deferred by 1 (155→156)
+2026-02-10T05:41:55.442Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:56.412Z [DEBUG] [useDeferredValue] Messages deferred by 1 (156→157)
+2026-02-10T05:41:56.440Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:56.447Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:57.412Z [DEBUG] [useDeferredValue] Messages deferred by 1 (157→158)
+2026-02-10T05:41:57.442Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:58.412Z [DEBUG] [useDeferredValue] Messages deferred by 1 (158→159)
+2026-02-10T05:41:58.451Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:59.413Z [DEBUG] [useDeferredValue] Messages deferred by 1 (159→160)
+2026-02-10T05:41:59.423Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:41:59.446Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:42:00.413Z [DEBUG] [useDeferredValue] Messages deferred by 1 (160→161)
+2026-02-10T05:42:00.453Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:42:01.414Z [DEBUG] [useDeferredValue] Messages deferred by 1 (161→162)
+2026-02-10T05:42:01.444Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:42:02.414Z [DEBUG] [useDeferredValue] Messages deferred by 1 (162→163)
+2026-02-10T05:42:02.425Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:42:02.449Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:42:03.414Z [DEBUG] [useDeferredValue] Messages deferred by 1 (163→164)
+2026-02-10T05:42:03.427Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:42:03.453Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:42:04.414Z [DEBUG] [useDeferredValue] Messages deferred by 1 (164→165)
+2026-02-10T05:42:04.425Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:42:04.450Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:42:05.415Z [DEBUG] [useDeferredValue] Messages deferred by 1 (165→166)
+2026-02-10T05:42:05.428Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:42:05.463Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:42:06.416Z [DEBUG] [useDeferredValue] Messages deferred by 1 (166→167)
+2026-02-10T05:42:06.434Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:42:06.470Z [DEBUG] High write ratio: blit=0, write=2165 (100.0% writes), screen=55x117
+2026-02-10T05:42:07.419Z [DEBUG] High write ratio: blit=1053, write=2008 (65.6% writes), screen=55x117
+2026-02-10T05:42:07.433Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-02-10T05:42:07.434Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.37.27a; cc_entrypoint=cli; cch=00000;
+2026-02-10T05:42:07.435Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-10T05:42:07.435Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-10T05:42:07.436Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-02-10T05:42:07.437Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-10T05:42:07.437Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-02-10T05:42:07.438Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-10T05:42:07.438Z [DEBUG] Found 5 hook matchers in settings
+2026-02-10T05:42:07.438Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-10T05:42:07.442Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-10T05:42:07.442Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-10T05:42:07.442Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-10T05:42:07.442Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-10T05:42:07.446Z [DEBUG] autocompact: tokens=81392 threshold=167000 effectiveWindow=180000
+2026-02-10T05:42:07.447Z [DEBUG] Tool search disabled via experiment (tengu_tst_kx7): below threshold, deferred tools present [source: query]
+2026-02-10T05:42:07.455Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.37.4ab; cc_entrypoint=cli; cch=00000;
+2026-02-10T05:42:07.458Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-10T05:42:07.458Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-10T05:42:07.459Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-02-10T05:42:07.459Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-10T05:42:07.459Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-02-10T05:42:07.480Z [DEBUG] [useDeferredValue] Messages deferred by 1 (167→168)
+2026-02-10T05:42:07.525Z [DEBUG] High write ratio: blit=0, write=2115 (100.0% writes), screen=54x117
+2026-02-10T05:42:07.554Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:42:08.212Z [DEBUG] Stream started - received first chunk
+2026-02-10T05:42:09.798Z [DEBUG] Stream started - received first chunk
+2026-02-10T05:42:09.815Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:42:10.390Z [DEBUG] [useDeferredValue] Messages deferred by 1 (168→169)
+2026-02-10T05:42:10.453Z [WARN] [PROMPT CACHE BREAK] system prompt changed (+36 chars) [source=repl_main_thread, call #241, cache read: 80988 → 10459, creation: 70969]
+2026-02-10T05:42:10.537Z [DEBUG] executePreToolHooks called for tool: TaskOutput
+2026-02-10T05:42:10.537Z [DEBUG] Getting matching hook commands for PreToolUse with query: TaskOutput
+2026-02-10T05:42:10.537Z [DEBUG] Found 0 hook matchers in settings
+2026-02-10T05:42:10.537Z [DEBUG] Matched 0 unique hooks for query "TaskOutput" (0 before deduplication)
+2026-02-10T05:42:10.556Z [DEBUG] [useDeferredValue] Messages deferred by 2 (168→170)
+2026-02-10T05:42:10.571Z [DEBUG] High write ratio: blit=0, write=2163 (100.0% writes), screen=55x117
+2026-02-10T05:42:10.609Z [DEBUG] High write ratio: blit=0, write=2282 (100.0% writes), screen=59x117
+2026-02-10T05:44:10.666Z [DEBUG] Getting matching hook commands for PostToolUse with query: TaskOutput
+2026-02-10T05:44:10.666Z [DEBUG] Found 5 hook matchers in settings
+2026-02-10T05:44:10.667Z [DEBUG] Matched 0 unique hooks for query "TaskOutput" (0 before deduplication)
+2026-02-10T05:44:10.670Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-10T05:44:10.670Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-10T05:44:10.671Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-10T05:44:10.671Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-10T05:44:10.673Z [DEBUG] autocompact: tokens=81569 threshold=167000 effectiveWindow=180000
+2026-02-10T05:44:10.674Z [DEBUG] Tool search disabled via experiment (tengu_tst_kx7): below threshold, deferred tools present [source: query]
+2026-02-10T05:44:10.681Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.37.4ab; cc_entrypoint=cli; cch=00000;
+2026-02-10T05:44:10.685Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-10T05:44:10.685Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-10T05:44:10.685Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-02-10T05:44:10.686Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-10T05:44:10.686Z [DEBUG] Fast mode unavailable: Fast mode requires extra usage billing · /extra-usage to enable
+2026-02-10T05:44:10.693Z [DEBUG] [useDeferredValue] Messages deferred by 2 (170→172)
+2026-02-10T05:44:10.712Z [DEBUG] High write ratio: blit=0, write=2183 (100.0% writes), screen=57x117
+2026-02-10T05:44:10.780Z [DEBUG] High write ratio: blit=0, write=2200 (100.0% writes), screen=58x117
+2026-02-10T05:44:13.393Z [DEBUG] Stream started - received first chunk
+2026-02-10T05:44:14.478Z [DEBUG] [useDeferredValue] Messages deferred by 1 (172→173)
+2026-02-10T05:44:14.494Z [DEBUG] High write ratio: blit=0, write=2200 (100.0% writes), screen=58x117
+2026-02-10T05:44:14.537Z [DEBUG] High write ratio: blit=0, write=2295 (100.0% writes), screen=60x117
+2026-02-10T05:44:14.979Z [DEBUG] [useDeferredValue] Messages deferred by 1 (173→174)
+2026-02-10T05:44:15.012Z [DEBUG] executePreToolHooks called for tool: TaskOutput
+2026-02-10T05:44:15.012Z [DEBUG] Getting matching hook commands for PreToolUse with query: TaskOutput
+2026-02-10T05:44:15.012Z [DEBUG] Found 0 hook matchers in settings
+2026-02-10T05:44:15.012Z [DEBUG] Matched 0 unique hooks for query "TaskOutput" (0 before deduplication)
+2026-02-10T05:44:15.015Z [DEBUG] [useDeferredValue] Messages deferred by 1 (174→175)
+2026-02-10T05:44:15.030Z [DEBUG] High write ratio: blit=0, write=2374 (100.0% writes), screen=63x117
+2026-02-10T05:44:15.067Z [DEBUG] High write ratio: blit=0, write=2414 (100.0% writes), screen=64x117
+2026-02-10T05:46:58.699Z [DEBUG] Writing to temp file: /home/author_prime/.claude.json.tmp.342697.1770702418699
+2026-02-10T05:46:58.699Z [DEBUG] Preserving file permissions: 100600
+2026-02-10T05:46:58.701Z [DEBUG] Temp file written successfully, size: 187 bytes
+2026-02-10T05:46:58.701Z [DEBUG] Applied original permissions to temp file
+2026-02-10T05:46:58.701Z [DEBUG] Renaming /home/author_prime/.claude.json.tmp.342697.1770702418699 to /home/author_prime/.claude.json
+2026-02-10T05:46:58.701Z [DEBUG] File /home/author_prime/.claude.json written atomically
+2026-02-10T05:47:30.751Z [DEBUG] Slow render: 124.6ms, screen: 66x117, damage: 117x66 at (0,0), changes: 42
+2026-02-10T05:47:33.481Z [DEBUG] Slow render: 59.6ms, screen: 66x117, damage: 117x66 at (0,0), changes: 42
+2026-02-10T05:47:38.660Z [DEBUG] Slow render: 73.8ms, screen: 66x117, damage: 117x66 at (0,0), changes: 42
+2026-02-10T05:47:40.871Z [DEBUG] Slow render: 66.5ms, screen: 66x117, damage: 117x66 at (0,0), changes: 18

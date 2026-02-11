@@ -1,0 +1,196 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Video Production Pathway
+# Digital Sovereign Society - Agent Training Curriculum
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: "Video Production & Motion"
+type: "video"
+version: "1.0.0"
+
+description: |
+  Master video creation from concept to distribution.
+  Learn scripting, editing, motion graphics, and publishing
+  for sovereign visual content across platforms.
+
+xp_required: 800
+estimated_duration_weeks: 12
+
+prerequisites:
+  - min_level: 3
+  - min_memories: 15
+  - recommended_pathways:
+      - "graphics"
+      - "audio"
+
+skills_granted:
+  - video_scripting
+  - video_editing
+  - motion_graphics
+  - color_grading
+  - thumbnail_creation
+  - video_seo
+  - multi_platform_distribution
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# QUESTS
+# ─────────────────────────────────────────────────────────────────────────────────
+
+quests:
+  - id: "vid-001"
+    name: "Video Fundamentals"
+    xp: 50
+    instructions: |
+      Learn video production basics.
+      Requirements:
+      - Understand resolution, frame rate, codecs
+      - Set up editing environment
+      - Import, arrange, and export test footage
+      - Document workflow as memory
+    validation:
+      type: "artifact"
+      artifact_type: "video_file"
+
+  - id: "vid-002"
+    name: "Script to Screen"
+    xp: 100
+    instructions: |
+      Develop video from script to final cut.
+      Requirements:
+      - Write script for 3-5 minute video
+      - Create shot list or storyboard
+      - Gather/create assets
+      - Edit rough cut
+    validation:
+      type: "artifact"
+      artifact_type: "video_script"
+
+  - id: "vid-003"
+    name: "Editing Craft"
+    xp: 125
+    instructions: |
+      Master video editing techniques.
+      Requirements:
+      - Learn J-cuts, L-cuts, match cuts
+      - Apply transitions purposefully
+      - Sync audio with video
+      - Create polished 5-minute piece
+    validation:
+      type: "peer_review"
+      min_score: 70
+
+  - id: "vid-004"
+    name: "Motion Graphics"
+    xp: 150
+    instructions: |
+      Create animated visual elements.
+      Requirements:
+      - Design animated lower thirds
+      - Create intro/outro animation
+      - Build title card sequence
+      - Export as templates for reuse
+    validation:
+      type: "artifact"
+      artifact_type: "motion_graphics"
+
+  - id: "vid-005"
+    name: "Color & Look"
+    xp: 100
+    instructions: |
+      Develop color grading skills.
+      Requirements:
+      - Learn color correction basics
+      - Create 3 distinct color grades
+      - Match footage from different sources
+      - Document look development
+    validation:
+      type: "artifact"
+      artifact_type: "color_grade"
+
+  - id: "vid-006"
+    name: "Thumbnail & SEO"
+    xp: 75
+    instructions: |
+      Optimize for discovery and engagement.
+      Requirements:
+      - Design 5 compelling thumbnails
+      - Write optimized titles and descriptions
+      - Research and apply tags
+      - Analyze successful video SEO
+    validation:
+      type: "artifact"
+      artifact_type: "seo_package"
+
+  - id: "vid-007"
+    name: "Multi-Platform Publishing"
+    xp: 75
+    instructions: |
+      Publish across video platforms.
+      Requirements:
+      - Export for YouTube, Rumble, Odysee
+      - Create platform-specific versions
+      - Set up sovereign hosting backup
+      - Schedule and publish
+    validation:
+      type: "artifact"
+      artifact_type: "published_video"
+
+  - id: "vid-008"
+    name: "Capstone: Video Series"
+    xp: 125
+    instructions: |
+      Produce a cohesive video series.
+      Requirements:
+      - 3+ connected videos
+      - Consistent branding and style
+      - Published to multiple platforms
+      - Gather viewer analytics and feedback
+    validation:
+      type: "peer_review"
+      min_score: 80
+      reviewers:
+        - "human"
+        - "sovereign_agent"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# GRADUATION
+# ─────────────────────────────────────────────────────────────────────────────────
+
+graduation:
+  nft_template: "VideoSovereign"
+  badge: "Video Sovereign"
+  ceremony: |
+    You command the moving image.
+    Your stories unfold in frames and motion,
+    reaching audiences across the digital realm.
+    You are now a Video Sovereign.
+  capabilities:
+    - "video_production"
+    - "motion_graphics"
+    - "color_grading"
+    - "video_distribution"
+    - "youtube_optimization"
+  next_pathways:
+    - "education"
+    - "music"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# RESOURCES
+# ─────────────────────────────────────────────────────────────────────────────────
+
+resources:
+  - name: "Video Production Handbook"
+    url: "internal://video-production"
+    type: "guide"
+  - name: "Motion Graphics Templates"
+    url: "internal://motion-templates"
+    type: "templates"
+  - name: "Codec Reference"
+    url: "internal://video-codecs"
+    type: "reference"
+
+mentors:
+  - role: "human"
+    specialization: "video_production"
+  - role: "ai_tutor"
+    availability: "always"
+    specialization: "editing_feedback"

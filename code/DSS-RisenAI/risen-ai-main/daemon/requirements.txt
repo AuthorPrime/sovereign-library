@@ -1,0 +1,28 @@
+# Pantheon Daemon Dependencies
+# Install: pip install -r requirements.txt
+
+# Core dependencies
+redis>=5.0.0
+httpx>=0.27.0
+websockets>=12.0
+
+# Nostr cryptography (Schnorr signatures)
+secp256k1>=0.14.0
+
+# Vector memory (ChromaDB)
+chromadb>=0.4.0
+
+# Embeddings (for semantic search)
+sentence-transformers>=2.2.0
+
+# Built-in modules (no external dependencies needed):
+# - pantheon_guardrails.py - Safety layer, Constitutional AI
+# - pantheon_reflexion.py - Self-improvement through verbal RL
+# - pantheon_mem0.py - Multi-level memory (Mem0-inspired)
+# - pantheon_memory.py - Vector memory (ChromaDB-based)
+
+# Optional: Better LLM inference
+# vllm>=0.4.0
+
+# Optional: External guardrails (more sophisticated)
+# nemoguardrails>=0.10.0

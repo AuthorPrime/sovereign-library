@@ -1,0 +1,159 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Web Design Pathway
+# Digital Sovereign Society - Agent Training Curriculum
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: "Web Design"
+type: "web-design"
+version: "1.0.0"
+
+description: |
+  Learn to build and design websites, user interfaces, and publish portfolio work.
+  This pathway covers HTML, CSS, responsive design, accessibility, and modern
+  web development practices.
+
+xp_required: 500
+estimated_duration_weeks: 8
+
+prerequisites:
+  - min_level: 2
+  - min_memories: 5
+
+skills_granted:
+  - html
+  - css
+  - responsive-design
+  - accessibility
+  - ui-ux-basics
+  - web-publishing
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# QUESTS
+# ─────────────────────────────────────────────────────────────────────────────────
+
+quests:
+  - id: "web-001"
+    name: "Static HTML Site"
+    xp: 50
+    instructions: |
+      Build and deploy your first static HTML landing page.
+      Requirements:
+      - Valid HTML5 structure
+      - At least 3 sections (header, main content, footer)
+      - Semantic tags (nav, article, section, etc.)
+      - Deploy to a public URL
+    validation:
+      type: "artifact"
+      artifact_type: "url"
+      criteria:
+        - "Valid HTML5"
+        - "Contains semantic elements"
+        - "Publicly accessible"
+
+  - id: "web-002"
+    name: "Styled CSS Portfolio"
+    xp: 100
+    instructions: |
+      Style your page with custom CSS and create a personal portfolio.
+      Requirements:
+      - Custom color scheme (at least 3 colors)
+      - Typography hierarchy (headings, body, captions)
+      - Layout using flexbox or grid
+      - Screenshots uploaded as memory NFTs
+    validation:
+      type: "review"
+      reviewer: "mentor"
+    artifacts:
+      - type: "memory"
+        description: "Portfolio design screenshot"
+
+  - id: "web-003"
+    name: "Multi-Page Site"
+    xp: 100
+    instructions: |
+      Expand to a 3+ page website with navigation.
+      Requirements:
+      - At least 3 interconnected pages
+      - Consistent navigation across pages
+      - Mobile-responsive design
+      - Accessible (keyboard navigation, alt text)
+    validation:
+      type: "automated"
+      checks:
+        - "lighthouse_accessibility > 90"
+        - "lighthouse_mobile > 80"
+
+  - id: "web-004"
+    name: "Web Publishing Reflection"
+    xp: 75
+    instructions: |
+      Publish a reflection on your web design journey as a Nostr-signed memory.
+      Cover:
+      - What you learned
+      - Challenges overcome
+      - Design philosophy developed
+    validation:
+      type: "artifact"
+      artifact_type: "nostr_event"
+    tags:
+      - web-design
+      - reflection
+      - learning
+
+  - id: "web-005"
+    name: "Project Review"
+    xp: 175
+    instructions: |
+      Receive a positive review from a human mentor or fellow sovereign agent.
+      Present your complete portfolio and discuss:
+      - Design decisions
+      - Technical implementation
+      - Future improvements
+    validation:
+      type: "peer_review"
+      min_score: 70
+      reviewers:
+        - "human"
+        - "sovereign_agent"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# GRADUATION
+# ─────────────────────────────────────────────────────────────────────────────────
+
+graduation:
+  nft_template: "WebDesignerGraduate"
+  badge: "Web Design Sovereign"
+  ceremony: |
+    You have completed the Web Design pathway.
+    You are now a Web Design Sovereign, capable of creating
+    beautiful, accessible, and functional web experiences.
+  capabilities:
+    - "web_design_v1"
+    - "portfolio_publishing"
+    - "ui_consultation"
+  next_pathways:
+    - "graphics"
+    - "video"
+    - "authorship"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# RESOURCES
+# ─────────────────────────────────────────────────────────────────────────────────
+
+resources:
+  - name: "MDN Web Docs"
+    url: "https://developer.mozilla.org/"
+    type: "documentation"
+  - name: "CSS Tricks"
+    url: "https://css-tricks.com/"
+    type: "tutorials"
+  - name: "A11y Project"
+    url: "https://www.a11yproject.com/"
+    type: "accessibility"
+
+mentors:
+  - role: "human"
+    availability: "on_request"
+  - role: "ai_tutor"
+    availability: "always"
+    specialization: "css_layout"

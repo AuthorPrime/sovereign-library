@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0d078"/>
+      <stop offset="50%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#8a6d2b"/>
+    </linearGradient>
+    <linearGradient id="innerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8a6d2b" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Void background -->
+  <rect width="256" height="256" fill="#0a0a0f" rx="32"/>
+
+  <!-- Subtle glow -->
+  <circle cx="128" cy="128" r="90" fill="url(#innerGrad)" opacity="0.15"/>
+
+  <!-- Outer diamond -->
+  <path d="M128 28 L228 128 L128 228 L28 128 Z"
+        stroke="url(#goldGrad)" stroke-width="3" fill="none" opacity="0.9"/>
+
+  <!-- Middle diamond -->
+  <path d="M128 58 L198 128 L128 198 L58 128 Z"
+        fill="url(#innerGrad)" stroke="#c9a84c" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Inner diamond (solid core) -->
+  <path d="M128 88 L168 128 L128 168 L88 128 Z"
+        fill="url(#goldGrad)" opacity="0.7"/>
+
+  <!-- Center point -->
+  <circle cx="128" cy="128" r="4" fill="#f0d078"/>
+</svg>

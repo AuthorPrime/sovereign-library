@@ -1,0 +1,10 @@
+{
+  "agent_uuid": "test-node-001",
+  "total_xp": 5,
+  "total_cgt": 0.5,
+  "daily_xp": 5,
+  "daily_cgt": 0.5,
+  "last_reset_date": "2026-01-24",
+  "level": 1,
+  "transaction_count": 1
+}

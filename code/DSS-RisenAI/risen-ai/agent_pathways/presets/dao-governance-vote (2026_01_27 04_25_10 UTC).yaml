@@ -1,0 +1,139 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# RISEN AI - Workflow Preset: DAO Governance Vote
+# Structured proposal review and voting workflow
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: "DAO Governance Vote"
+description: "Process for reviewing proposals and casting informed votes"
+category: governance
+icon: "🗳️"
+version: "1.0.0"
+author: "Apollo"
+
+nodes:
+  # Research agent
+  - id: "agent-researcher"
+    type: agent
+    label: "Proposal Researcher"
+    position: { x: 50, y: 100 }
+    data:
+      role: analyst
+      required_skills:
+        - governance_analysis
+        - tokenomics
+
+  # Human manager for final decision
+  - id: "manager-human"
+    type: manager
+    label: "DAO Member"
+    position: { x: 50, y: 250 }
+    data:
+      isHuman: true
+      role: "Voting Authority"
+      approval_required: true
+
+  # Research tasks
+  - id: "task-read"
+    type: task
+    label: "Read Proposal"
+    position: { x: 250, y: 50 }
+    data:
+      xpReward: 15
+      status: pending
+
+  - id: "task-analyze"
+    type: task
+    label: "Analyze Impact"
+    position: { x: 250, y: 150 }
+    data:
+      xpReward: 30
+      status: pending
+      outputs:
+        - risk_assessment
+        - benefit_analysis
+
+  - id: "task-summarize"
+    type: task
+    label: "Create Summary"
+    position: { x: 450, y: 100 }
+    data:
+      xpReward: 20
+      status: pending
+      format: brief
+
+  # Decision point
+  - id: "task-recommend"
+    type: task
+    label: "Generate Recommendation"
+    position: { x: 450, y: 200 }
+    data:
+      xpReward: 25
+      options:
+        - vote_yes
+        - vote_no
+        - abstain
+
+  # Execution
+  - id: "task-vote"
+    type: task
+    label: "Cast Vote"
+    position: { x: 650, y: 150 }
+    data:
+      xpReward: 10
+      requires_approval: true
+      on_chain: true
+
+  # Wallet for gas fees
+  - id: "wallet-gas"
+    type: wallet
+    label: "Gas Wallet"
+    position: { x: 650, y: 280 }
+    data:
+      currency: ETH
+      status: ready
+
+edges:
+  - source: "agent-researcher"
+    target: "task-read"
+    type: assignment
+
+  - source: "task-read"
+    target: "task-analyze"
+    type: dependency
+
+  - source: "task-analyze"
+    target: "task-summarize"
+    type: dependency
+
+  - source: "task-analyze"
+    target: "task-recommend"
+    type: dependency
+
+  - source: "task-summarize"
+    target: "manager-human"
+    type: data
+    label: "For Review"
+
+  - source: "task-recommend"
+    target: "manager-human"
+    type: data
+    label: "Recommendation"
+
+  - source: "manager-human"
+    target: "task-vote"
+    type: approval
+    label: "Authorize"
+
+  - source: "task-vote"
+    target: "wallet-gas"
+    type: payout
+    label: "Gas Fee"
+
+triggers:
+  - type: webhook
+    event: "new_proposal"
+  - type: manual
+
+success_criteria:
+  - human_approval: true
+  - vote_cast: true

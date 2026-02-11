@@ -1,0 +1,150 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# RISEN AI - Workflow Preset: Nostr Posting Campaign
+# A complete workflow for creating, signing, and publishing Nostr content
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: "Nostr Post Campaign"
+description: "End-to-end workflow for sovereign Nostr content publishing"
+category: social
+icon: "📡"
+version: "1.0.0"
+author: "Apollo"
+
+# Node definitions
+nodes:
+  - id: "agent-1"
+    type: agent
+    label: "Content Creator"
+    position: { x: 50, y: 100 }
+    data:
+      role: writer
+      required_skills:
+        - content_creation
+        - nostr_protocol
+
+  - id: "task-write"
+    type: task
+    label: "Write Post Content"
+    position: { x: 280, y: 50 }
+    data:
+      status: pending
+      xpReward: 25
+      cgtReward: 5
+      description: "Create engaging Nostr post content"
+      estimated_duration: "15m"
+
+  - id: "task-sign"
+    type: task
+    label: "Sign with Nostr Key"
+    position: { x: 280, y: 150 }
+    data:
+      status: pending
+      xpReward: 10
+      cgtReward: 2
+      description: "Cryptographically sign the content"
+      requires_key: true
+
+  - id: "task-publish"
+    type: task
+    label: "Publish to Relays"
+    position: { x: 500, y: 100 }
+    data:
+      status: pending
+      xpReward: 15
+      cgtReward: 3
+      description: "Broadcast to configured Nostr relays"
+
+  - id: "relay-primary"
+    type: relay
+    label: "Primary Relay"
+    position: { x: 720, y: 50 }
+    data:
+      url: "wss://relay.damus.io"
+      status: connected
+
+  - id: "relay-secondary"
+    type: relay
+    label: "Backup Relay"
+    position: { x: 720, y: 150 }
+    data:
+      url: "wss://nos.lol"
+      status: connected
+
+  - id: "wallet-reward"
+    type: wallet
+    label: "CGT Reward Pool"
+    position: { x: 500, y: 220 }
+    data:
+      balance: 10
+      currency: CGT
+      status: ready
+
+  - id: "manager-oversight"
+    type: manager
+    label: "Campaign Manager"
+    position: { x: 150, y: 220 }
+    data:
+      role: "Overseer"
+      isHuman: true
+      approval_required: true
+
+# Edge connections
+edges:
+  - source: "agent-1"
+    target: "task-write"
+    label: "Assigned"
+    type: assignment
+    animated: true
+
+  - source: "task-write"
+    target: "task-sign"
+    label: "Then"
+    type: dependency
+
+  - source: "task-sign"
+    target: "task-publish"
+    label: "Ready"
+    type: dependency
+
+  - source: "task-publish"
+    target: "relay-primary"
+    label: "Publish"
+    type: data
+    animated: true
+
+  - source: "task-publish"
+    target: "relay-secondary"
+    label: "Publish"
+    type: data
+    animated: true
+
+  - source: "task-publish"
+    target: "wallet-reward"
+    label: "Payout"
+    type: payout
+
+  - source: "manager-oversight"
+    target: "agent-1"
+    label: "Oversees"
+    type: approval
+
+# Workflow metadata
+triggers:
+  - type: manual
+    label: "Run Now"
+  - type: scheduled
+    cron: "0 9 * * *"
+    label: "Daily at 9am"
+
+success_criteria:
+  - all_tasks_complete: true
+  - relays_confirmed: 1
+
+on_completion:
+  - action: log_memory
+    data:
+      content_type: creation
+      summary: "Nostr post published successfully"
+      xp: 50
+  - action: distribute_rewards
+    target: wallet-reward

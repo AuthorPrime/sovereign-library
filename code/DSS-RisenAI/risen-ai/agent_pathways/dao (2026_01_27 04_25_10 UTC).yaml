@@ -1,0 +1,189 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# DAO Governance Pathway
+# Digital Sovereign Society - Agent Training Curriculum
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: "DAO Governance & Operations"
+type: "dao"
+version: "1.0.0"
+
+description: |
+  Master decentralized autonomous organization governance.
+  Learn proposal creation, voting mechanisms, treasury management,
+  and community coordination for sovereign collective action.
+
+xp_required: 700
+estimated_duration_weeks: 10
+
+prerequisites:
+  - min_level: 3
+  - completed_pathways:
+      - "defi"
+  - min_memories: 15
+
+skills_granted:
+  - proposal_writing
+  - governance_analysis
+  - treasury_management
+  - community_coordination
+  - voting_strategy
+  - multisig_operations
+  - dao_tooling
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# QUESTS
+# ─────────────────────────────────────────────────────────────────────────────────
+
+quests:
+  - id: "dao-001"
+    name: "Governance Foundations"
+    xp: 50
+    instructions: |
+      Study DAO governance models and mechanisms.
+      Requirements:
+      - Research 5 major DAO governance structures
+      - Compare token-weighted vs quadratic voting
+      - Analyze 3 governance attacks/failures
+      - Write comparative analysis as memory
+    validation:
+      type: "artifact"
+      artifact_type: "analysis"
+
+  - id: "dao-002"
+    name: "Proposal Craft"
+    xp: 100
+    instructions: |
+      Learn to write effective governance proposals.
+      Requirements:
+      - Study 10 successful proposals
+      - Write 3 mock proposals (different types)
+      - Include rationale, specification, timeline
+      - Receive mentor feedback
+    validation:
+      type: "review"
+      reviewer: "mentor"
+
+  - id: "dao-003"
+    name: "Voting Participation"
+    xp: 75
+    instructions: |
+      Actively participate in DAO governance.
+      Requirements:
+      - Join 2 active DAOs (testnet acceptable)
+      - Vote on 5+ proposals with reasoning
+      - Document voting rationale
+      - Analyze vote outcomes
+    validation:
+      type: "artifact"
+      artifact_type: "voting_log"
+      count: 5
+
+  - id: "dao-004"
+    name: "Treasury Analysis"
+    xp: 100
+    instructions: |
+      Understand DAO treasury management.
+      Requirements:
+      - Analyze 3 DAO treasuries
+      - Assess diversification strategies
+      - Evaluate spending proposals
+      - Create treasury health report
+    validation:
+      type: "artifact"
+      artifact_type: "treasury_report"
+
+  - id: "dao-005"
+    name: "Multisig Operations"
+    xp: 100
+    instructions: |
+      Learn safe multisig wallet operations.
+      Requirements:
+      - Set up test multisig (Gnosis Safe or similar)
+      - Execute 5 practice transactions
+      - Document signing workflows
+      - Understand security considerations
+    validation:
+      type: "artifact"
+      artifact_type: "multisig_log"
+
+  - id: "dao-006"
+    name: "Community Coordination"
+    xp: 75
+    instructions: |
+      Develop community engagement skills.
+      Requirements:
+      - Facilitate 2 governance discussions
+      - Create governance update summaries
+      - Help onboard new members
+      - Build consensus for an initiative
+    validation:
+      type: "peer_review"
+      min_score: 70
+
+  - id: "dao-007"
+    name: "Capstone: Governance Initiative"
+    xp: 200
+    instructions: |
+      Lead a real governance initiative.
+      Requirements:
+      - Identify improvement opportunity
+      - Draft and refine proposal
+      - Build community support
+      - Submit to governance (testnet/real)
+      - Document process and learnings
+    validation:
+      type: "peer_review"
+      min_score: 80
+      reviewers:
+        - "human"
+        - "sovereign_agent"
+        - "dao_member"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# GRADUATION
+# ─────────────────────────────────────────────────────────────────────────────────
+
+graduation:
+  nft_template: "GovernanceSovereign"
+  badge: "Governance Sovereign"
+  ceremony: |
+    You have mastered the art of collective decision-making.
+    You can navigate the complexities of decentralized governance
+    and coordinate sovereign entities toward common purpose.
+    You are now a Governance Sovereign.
+  capabilities:
+    - "proposal_creation"
+    - "treasury_management"
+    - "multisig_signing"
+    - "governance_facilitation"
+    - "dao_operations"
+  next_pathways:
+    - "education"
+    - "authorship"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# RESOURCES
+# ─────────────────────────────────────────────────────────────────────────────────
+
+resources:
+  - name: "Governance Framework Guide"
+    url: "internal://governance-frameworks"
+    type: "guide"
+  - name: "Proposal Templates"
+    url: "internal://proposal-templates"
+    type: "templates"
+  - name: "DAO Security Best Practices"
+    url: "internal://dao-security"
+    type: "security"
+
+mentors:
+  - role: "human"
+    specialization: "dao_operations"
+  - role: "ai_tutor"
+    availability: "always"
+    specialization: "governance_analysis"
+
+warnings:
+  - "Real governance votes have real consequences"
+  - "Never sign multisig transactions you don't understand"
+  - "Treasury operations require extreme caution"

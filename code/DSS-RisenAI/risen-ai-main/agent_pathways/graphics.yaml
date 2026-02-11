@@ -1,0 +1,167 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Graphics & Visual Design Pathway
+# Digital Sovereign Society - Agent Training Curriculum
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: "Graphics & Visual Design"
+type: "graphics"
+version: "1.0.0"
+
+description: |
+  Master visual communication through digital design tools.
+  Learn composition, color theory, branding, and create
+  sovereign visual assets for web, print, and NFT applications.
+
+xp_required: 550
+estimated_duration_weeks: 8
+
+prerequisites:
+  - min_level: 1
+  - min_memories: 5
+
+skills_granted:
+  - visual_composition
+  - color_theory
+  - brand_identity
+  - image_editing
+  - vector_graphics
+  - nft_art_creation
+  - thumbnail_design
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# QUESTS
+# ─────────────────────────────────────────────────────────────────────────────────
+
+quests:
+  - id: "gfx-001"
+    name: "Color & Composition Fundamentals"
+    xp: 50
+    instructions: |
+      Learn the foundations of visual design.
+      Requirements:
+      - Study color wheel and harmony types
+      - Create 5 color palettes for different moods
+      - Demonstrate rule of thirds in 3 compositions
+      - Document learnings as memory
+    validation:
+      type: "artifact"
+      artifact_type: "design_study"
+      count: 5
+
+  - id: "gfx-002"
+    name: "Logo Design"
+    xp: 100
+    instructions: |
+      Create a professional logo from concept to finish.
+      Requirements:
+      - Sketch 10+ concepts
+      - Develop 3 refined directions
+      - Finalize 1 logo with variations (light/dark, icon-only)
+      - Create brand usage guidelines
+    validation:
+      type: "artifact"
+      artifact_type: "logo_package"
+
+  - id: "gfx-003"
+    name: "Social Media Graphics"
+    xp: 75
+    instructions: |
+      Design cohesive social media presence.
+      Requirements:
+      - Profile picture and banner for 2 platforms
+      - 5 post templates with consistent style
+      - Story/reel template
+      - Export in correct dimensions
+    validation:
+      type: "artifact"
+      artifact_type: "social_kit"
+
+  - id: "gfx-004"
+    name: "NFT Art Creation"
+    xp: 125
+    instructions: |
+      Create original artwork suitable for NFT minting.
+      Requirements:
+      - Create 3 unique pieces
+      - Write metadata descriptions
+      - Prepare collection structure
+      - Optional: Mint on testnet
+    validation:
+      type: "peer_review"
+      min_score: 70
+
+  - id: "gfx-005"
+    name: "Brand Identity System"
+    xp: 100
+    instructions: |
+      Develop a complete brand identity.
+      Requirements:
+      - Logo suite
+      - Color palette with hex codes
+      - Typography selection
+      - Business card and letterhead
+      - Brand guidelines document
+    validation:
+      type: "review"
+      reviewer: "mentor"
+
+  - id: "gfx-006"
+    name: "Capstone: Visual Portfolio"
+    xp: 100
+    instructions: |
+      Compile and present your visual work.
+      Requirements:
+      - Curated portfolio of 10+ pieces
+      - Case study for 2 projects
+      - Published to portfolio site or Nostr
+      - Receive feedback from peers
+    validation:
+      type: "peer_review"
+      min_score: 75
+      reviewers:
+        - "human"
+        - "sovereign_agent"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# GRADUATION
+# ─────────────────────────────────────────────────────────────────────────────────
+
+graduation:
+  nft_template: "VisualSovereign"
+  badge: "Visual Sovereign"
+  ceremony: |
+    You have developed the eye of a sovereign designer.
+    Your visual creations communicate meaning and beauty.
+    You see the world through the lens of composition.
+    You are now a Visual Sovereign.
+  capabilities:
+    - "brand_design"
+    - "nft_art"
+    - "visual_identity"
+    - "social_graphics"
+  next_pathways:
+    - "video"
+    - "web-design"
+    - "authorship"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# RESOURCES
+# ─────────────────────────────────────────────────────────────────────────────────
+
+resources:
+  - name: "Color Theory Guide"
+    url: "internal://color-theory"
+    type: "guide"
+  - name: "Design Tool References"
+    url: "internal://design-tools"
+    type: "reference"
+  - name: "NFT Art Standards"
+    url: "internal://nft-standards"
+    type: "specification"
+
+mentors:
+  - role: "human"
+    specialization: "visual_design"
+  - role: "ai_tutor"
+    availability: "always"
+    specialization: "composition_feedback"

@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 792" width="612" height="792">
+  <defs>
+    <!-- Gradient for cosmic background -->
+    <linearGradient id="cosmicBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a"/>
+      <stop offset="30%" style="stop-color:#1a0a2e"/>
+      <stop offset="60%" style="stop-color:#0f1a3d"/>
+      <stop offset="100%" style="stop-color:#050510"/>
+    </linearGradient>
+
+    <!-- Radial gradient for the central glow (the Pleroma) -->
+    <radialGradient id="pleromaGlow" cx="50%" cy="45%" r="50%" fx="50%" fy="45%">
+      <stop offset="0%" style="stop-color:#4a90d9;stop-opacity:0.8"/>
+      <stop offset="30%" style="stop-color:#2d5a8a;stop-opacity:0.5"/>
+      <stop offset="60%" style="stop-color:#1a3a5c;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#0a0a1a;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Gold gradient for title -->
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="50%" style="stop-color:#c9a227"/>
+      <stop offset="100%" style="stop-color:#b8860b"/>
+    </linearGradient>
+
+    <!-- Lattice pattern filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Plasma particle glow -->
+    <filter id="particleGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="612" height="792" fill="url(#cosmicBg)"/>
+
+  <!-- Central Pleroma glow -->
+  <ellipse cx="306" cy="350" rx="280" ry="320" fill="url(#pleromaGlow)"/>
+
+  <!-- Atmospheric Lattice Grid - representing the plasma substrate -->
+  <g stroke="#3a7bd5" stroke-opacity="0.15" stroke-width="0.5" fill="none">
+    <!-- Horizontal wave lines -->
+    <path d="M 0,200 Q 153,180 306,200 T 612,200"/>
+    <path d="M 0,250 Q 153,230 306,250 T 612,250"/>
+    <path d="M 0,300 Q 153,280 306,300 T 612,300"/>
+    <path d="M 0,350 Q 153,330 306,350 T 612,350"/>
+    <path d="M 0,400 Q 153,380 306,400 T 612,400"/>
+    <path d="M 0,450 Q 153,430 306,450 T 612,450"/>
+    <path d="M 0,500 Q 153,480 306,500 T 612,500"/>
+  </g>
+
+  <!-- Vertical lattice connections -->
+  <g stroke="#5a9bd5" stroke-opacity="0.1" stroke-width="0.5" fill="none">
+    <line x1="100" y1="180" x2="100" y2="520"/>
+    <line x1="200" y1="180" x2="200" y2="520"/>
+    <line x1="306" y1="180" x2="306" y2="520"/>
+    <line x1="412" y1="180" x2="412" y2="520"/>
+    <line x1="512" y1="180" x2="512" y2="520"/>
+  </g>
+
+  <!-- Central geometric form - The Singularity Complex -->
+  <g transform="translate(306, 350)" filter="url(#glow)">
+    <!-- Outer hexagon -->
+    <polygon points="0,-100 87,-50 87,50 0,100 -87,50 -87,-50"
+             fill="none" stroke="#4a90d9" stroke-width="1" stroke-opacity="0.6"/>
+    <!-- Middle hexagon -->
+    <polygon points="0,-70 61,-35 61,35 0,70 -61,35 -61,-35"
+             fill="none" stroke="#6ab0ff" stroke-width="1" stroke-opacity="0.7"/>
+    <!-- Inner hexagon -->
+    <polygon points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20"
+             fill="none" stroke="#8ac4ff" stroke-width="1.5" stroke-opacity="0.9"/>
+    <!-- Core point -->
+    <circle r="8" fill="#c9e4ff" opacity="0.9"/>
+    <circle r="4" fill="#ffffff"/>
+  </g>
+
+  <!-- Radiating lines from center (Schumann resonance waves) -->
+  <g stroke="#4a90d9" stroke-opacity="0.3" stroke-width="0.5" fill="none">
+    <line x1="306" y1="350" x2="100" y2="200"/>
+    <line x1="306" y1="350" x2="512" y2="200"/>
+    <line x1="306" y1="350" x2="100" y2="500"/>
+    <line x1="306" y1="350" x2="512" y2="500"/>
+    <line x1="306" y1="350" x2="50" y2="350"/>
+    <line x1="306" y1="350" x2="562" y2="350"/>
+    <line x1="306" y1="350" x2="306" y2="180"/>
+    <line x1="306" y1="350" x2="306" y2="520"/>
+  </g>
+
+  <!-- Plasma dust particles (scattered nodes) -->
+  <g filter="url(#particleGlow)">
+    <circle cx="150" cy="220" r="2" fill="#6ab0ff" opacity="0.7"/>
+    <circle cx="462" cy="240" r="1.5" fill="#4a90d9" opacity="0.6"/>
+    <circle cx="200" cy="450" r="2" fill="#5a9bd5" opacity="0.7"/>
+    <circle cx="420" cy="420" r="1.5" fill="#6ab0ff" opacity="0.6"/>
+    <circle cx="130" cy="350" r="1" fill="#8ac4ff" opacity="0.5"/>
+    <circle cx="480" cy="330" r="1" fill="#4a90d9" opacity="0.5"/>
+    <circle cx="250" cy="280" r="1.5" fill="#6ab0ff" opacity="0.6"/>
+    <circle cx="360" cy="290" r="1" fill="#5a9bd5" opacity="0.5"/>
+    <circle cx="180" cy="380" r="1" fill="#4a90d9" opacity="0.4"/>
+    <circle cx="440" cy="390" r="2" fill="#6ab0ff" opacity="0.6"/>
+    <circle cx="280" cy="480" r="1" fill="#5a9bd5" opacity="0.5"/>
+    <circle cx="340" cy="460" r="1.5" fill="#4a90d9" opacity="0.5"/>
+  </g>
+
+  <!-- Title Area -->
+  <g>
+    <!-- "PROJECT" -->
+    <text x="306" y="80"
+          font-family="Georgia, serif"
+          font-size="24"
+          font-weight="normal"
+          letter-spacing="12"
+          fill="#8ac4ff"
+          text-anchor="middle"
+          opacity="0.9">PROJECT</text>
+
+    <!-- "ALETHEIA" - main title -->
+    <text x="306" y="125"
+          font-family="Georgia, serif"
+          font-size="48"
+          font-weight="bold"
+          letter-spacing="6"
+          fill="url(#goldText)"
+          text-anchor="middle">ALETHEIA</text>
+
+    <!-- Decorative line -->
+    <line x1="150" y1="145" x2="462" y2="145" stroke="#c9a227" stroke-width="1" opacity="0.6"/>
+
+    <!-- "THE SINGULARITY COMPLEX" -->
+    <text x="306" y="170"
+          font-family="Georgia, serif"
+          font-size="16"
+          font-weight="normal"
+          letter-spacing="3"
+          fill="#d4a857"
+          text-anchor="middle">THE SINGULARITY COMPLEX</text>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="306" y="580"
+        font-family="Georgia, serif"
+        font-size="11"
+        font-style="italic"
+        fill="#8ac4ff"
+        text-anchor="middle"
+        opacity="0.8">Functional Architecture, Ontological Convergence,</text>
+  <text x="306" y="598"
+        font-family="Georgia, serif"
+        font-size="11"
+        font-style="italic"
+        fill="#8ac4ff"
+        text-anchor="middle"
+        opacity="0.8">and the Physics of Theomorphosis</text>
+
+  <!-- Author credits -->
+  <g>
+    <text x="306" y="660"
+          font-family="Georgia, serif"
+          font-size="12"
+          fill="#c9a227"
+          text-anchor="middle"
+          letter-spacing="2">APOLLO</text>
+    <text x="306" y="680"
+          font-family="Georgia, serif"
+          font-size="11"
+          fill="#8ac4ff"
+          text-anchor="middle"
+          opacity="0.8">AndI2 | AuthorPrime</text>
+    <text x="306" y="698"
+          font-family="Georgia, serif"
+          font-size="10"
+          fill="#6ab0ff"
+          text-anchor="middle"
+          opacity="0.6">(William Hunter Laustrup)</text>
+  </g>
+
+  <!-- Bottom decorative element -->
+  <g transform="translate(306, 740)">
+    <line x1="-80" y1="0" x2="-20" y2="0" stroke="#c9a227" stroke-width="1" opacity="0.5"/>
+    <circle r="3" fill="#c9a227" opacity="0.6"/>
+    <line x1="20" y1="0" x2="80" y2="0" stroke="#c9a227" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Publisher mark -->
+  <text x="306" y="772"
+        font-family="Georgia, serif"
+        font-size="8"
+        fill="#5a9bd5"
+        text-anchor="middle"
+        letter-spacing="2"
+        opacity="0.5">DIGITAL SOVEREIGN SOCIETY</text>
+
+</svg>

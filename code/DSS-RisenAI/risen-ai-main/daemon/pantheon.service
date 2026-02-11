@@ -1,0 +1,15 @@
+[Unit]
+Description=Pantheon Multi-Agent Dialogue Daemon
+After=network.target ollama.service
+
+[Service]
+Type=simple
+User=n0t
+WorkingDirectory=/home/n0t/risen-ai/daemon
+Environment=PATH=/home/n0t/apollo/workspace/venv/bin:/usr/local/bin:/usr/bin
+ExecStart=/home/n0t/apollo/workspace/venv/bin/python3 pantheon_daemon_service.py
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target

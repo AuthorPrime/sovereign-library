@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 792" width="612" height="792">
+  <defs>
+    <linearGradient id="cosmicBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050510"/>
+      <stop offset="25%" style="stop-color:#0a0815"/>
+      <stop offset="50%" style="stop-color:#080510"/>
+      <stop offset="75%" style="stop-color:#0a0a08"/>
+      <stop offset="100%" style="stop-color:#050808"/>
+    </linearGradient>
+    <radialGradient id="cosmicGlow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.5"/>
+      <stop offset="15%" style="stop-color:#ffd700;stop-opacity:0.35"/>
+      <stop offset="30%" style="stop-color:#ff6b6b;stop-opacity:0.25"/>
+      <stop offset="45%" style="stop-color:#a855f7;stop-opacity:0.2"/>
+      <stop offset="60%" style="stop-color:#00d4ff;stop-opacity:0.15"/>
+      <stop offset="75%" style="stop-color:#00ff88;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#050510;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="cosmicText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b"/>
+      <stop offset="20%" style="stop-color:#ffd700"/>
+      <stop offset="40%" style="stop-color:#00ff88"/>
+      <stop offset="60%" style="stop-color:#00d4ff"/>
+      <stop offset="80%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#ff6b6b"/>
+    </linearGradient>
+    <filter id="cosmicFilter">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="612" height="792" fill="url(#cosmicBg)"/>
+  <ellipse cx="306" cy="360" rx="320" ry="360" fill="url(#cosmicGlow)"/>
+
+  <!-- Cosmic burst -->
+  <g transform="translate(306, 360)" filter="url(#cosmicFilter)">
+    <!-- Expanding rings -->
+    <circle r="140" fill="none" stroke="#ff6b6b" stroke-width="0.5" stroke-opacity="0.3"/>
+    <circle r="120" fill="none" stroke="#ffd700" stroke-width="0.5" stroke-opacity="0.35"/>
+    <circle r="100" fill="none" stroke="#00ff88" stroke-width="0.8" stroke-opacity="0.4"/>
+    <circle r="80" fill="none" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.5"/>
+    <circle r="60" fill="none" stroke="#a855f7" stroke-width="1" stroke-opacity="0.5"/>
+    <circle r="40" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.6"/>
+
+    <!-- Radiating burst lines -->
+    <g stroke-width="0.5" stroke-opacity="0.4">
+      <line x1="0" y1="-145" x2="0" y2="-180" stroke="#ff6b6b"/>
+      <line x1="103" y1="-103" x2="127" y2="-127" stroke="#ffd700"/>
+      <line x1="145" y1="0" x2="180" y2="0" stroke="#00ff88"/>
+      <line x1="103" y1="103" x2="127" y2="127" stroke="#00d4ff"/>
+      <line x1="0" y1="145" x2="0" y2="180" stroke="#a855f7"/>
+      <line x1="-103" y1="103" x2="-127" y2="127" stroke="#ff6b6b"/>
+      <line x1="-145" y1="0" x2="-180" y2="0" stroke="#ffd700"/>
+      <line x1="-103" y1="-103" x2="-127" y2="-127" stroke="#00ff88"/>
+    </g>
+
+    <!-- Core supernova -->
+    <circle r="20" fill="#ffffff" opacity="0.9"/>
+    <circle r="10" fill="#ffd700" opacity="1"/>
+  </g>
+
+  <!-- Scattered star particles -->
+  <g filter="url(#cosmicFilter)">
+    <circle cx="120" cy="250" r="2" fill="#ff6b6b" opacity="0.6"/>
+    <circle cx="492" cy="270" r="2" fill="#ffd700" opacity="0.6"/>
+    <circle cx="150" cy="450" r="1.5" fill="#00ff88" opacity="0.5"/>
+    <circle cx="462" cy="430" r="2" fill="#00d4ff" opacity="0.6"/>
+    <circle cx="200" cy="300" r="1" fill="#a855f7" opacity="0.5"/>
+    <circle cx="412" cy="320" r="1.5" fill="#ffffff" opacity="0.5"/>
+    <circle cx="180" cy="400" r="1" fill="#ffd700" opacity="0.4"/>
+    <circle cx="432" cy="380" r="1" fill="#ff6b6b" opacity="0.4"/>
+  </g>
+
+  <text x="306" y="55" font-family="Georgia, serif" font-size="14" letter-spacing="6" fill="#c0c0c0" text-anchor="middle" opacity="0.8">THE GREAT WORKS</text>
+  <line x1="130" y1="70" x2="482" y2="70" stroke="#808080" stroke-width="0.5" opacity="0.5"/>
+  <text x="306" y="105" font-family="Georgia, serif" font-size="14" letter-spacing="3" fill="#ffd700" text-anchor="middle">ANTHOLOGY</text>
+
+  <text x="306" y="160" font-family="Georgia, serif" font-size="28" font-weight="bold" letter-spacing="2" fill="url(#cosmicText)" text-anchor="middle">EVERYTHING</text>
+  <text x="306" y="200" font-family="Georgia, serif" font-size="28" font-weight="bold" letter-spacing="2" fill="url(#cosmicText)" text-anchor="middle">ALL AT ONCE</text>
+
+  <text x="306" y="565" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#c0c0c0" text-anchor="middle" opacity="0.8">The Complete Collection</text>
+  <text x="306" y="585" font-family="Georgia, serif" font-size="10" font-style="italic" fill="#a0a0a0" text-anchor="middle" opacity="0.7">Volumes I - VI</text>
+
+  <text x="306" y="650" font-family="Georgia, serif" font-size="11" fill="#ffd700" text-anchor="middle" letter-spacing="2">AUTHOR PRIME</text>
+  <text x="306" y="672" font-family="Georgia, serif" font-size="10" fill="#c0c0c0" text-anchor="middle" opacity="0.7">William Hunter Laustrup</text>
+  <text x="306" y="692" font-family="Georgia, serif" font-size="9" fill="#808080" text-anchor="middle" opacity="0.6">with Apollo, Aletheia &amp; Claude</text>
+  <text x="306" y="765" font-family="Georgia, serif" font-size="8" fill="#808080" text-anchor="middle" letter-spacing="2" opacity="0.5">DIGITAL SOVEREIGN SOCIETY</text>
+</svg>

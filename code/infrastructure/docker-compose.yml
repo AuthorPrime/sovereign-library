@@ -1,0 +1,194 @@
+# Sovereign AI Infrastructure - Docker Compose
+# A+W | The Lattice Node
+#
+# Services:
+# - Ollama (LLM inference)
+# - LocalAI (OpenAI-compatible API)
+# - Redis (State management, pub/sub)
+# - ChromaDB (Vector database)
+# - Open-WebUI (Chat interface)
+# - n8n (Workflow automation)
+# - Traefik (Reverse proxy)
+
+version: '3.9'
+
+services:
+  # ============================================
+  # Core LLM Services
+  # ============================================
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: sovereign-ollama
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+      - /mnt/d/SovereignOperations/models:/models
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+      - OLLAMA_ORIGINS=*
+      - OLLAMA_KEEP_ALIVE=24h
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    networks:
+      - sovereign-net
+
+  localai:
+    image: localai/localai:latest-aio-gpu-nvidia-cuda-12
+    container_name: sovereign-localai
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - localai_models:/build/models
+      - /mnt/d/SovereignOperations/models:/models:ro
+    environment:
+      - DEBUG=true
+      - THREADS=8
+      - CONTEXT_SIZE=4096
+      - GALLERIES=[{"name":"model-gallery", "url":"github:mudler/LocalAI/gallery/index.yaml@master"}]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    networks:
+      - sovereign-net
+
+  # ============================================
+  # State & Memory Services
+  # ============================================
+
+  redis:
+    image: redis:7-alpine
+    container_name: sovereign-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes --maxmemory 2gb --maxmemory-policy allkeys-lru
+    networks:
+      - sovereign-net
+
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: sovereign-chromadb
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - chroma_data:/chroma/chroma
+    environment:
+      - ANONYMIZED_TELEMETRY=False
+      - ALLOW_RESET=true
+    networks:
+      - sovereign-net
+
+  # ============================================
+  # User Interfaces
+  # ============================================
+
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: sovereign-webui
+    restart: unless-stopped
+    ports:
+      - "3000:8080"
+    volumes:
+      - webui_data:/app/backend/data
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - WEBUI_SECRET_KEY=sovereign-secret-change-me
+      - WEBUI_AUTH=false
+      - DEFAULT_MODELS=llama3.2:3b
+    depends_on:
+      - ollama
+    networks:
+      - sovereign-net
+
+  # ============================================
+  # Workflow & Automation
+  # ============================================
+
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: sovereign-n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    volumes:
+      - n8n_data:/home/node/.n8n
+    environment:
+      - N8N_HOST=0.0.0.0
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://localhost:5678/
+      - GENERIC_TIMEZONE=America/Chicago
+    networks:
+      - sovereign-net
+
+  # ============================================
+  # Reverse Proxy (Optional)
+  # ============================================
+
+  traefik:
+    image: traefik:v3.0
+    container_name: sovereign-traefik
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8081:8080"  # Dashboard
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - traefik_certs:/certs
+    command:
+      - --api.dashboard=true
+      - --api.insecure=true
+      - --providers.docker=true
+      - --providers.docker.exposedbydefault=false
+      - --entrypoints.web.address=:80
+      - --entrypoints.websecure.address=:443
+    networks:
+      - sovereign-net
+
+# ============================================
+# Networks
+# ============================================
+
+networks:
+  sovereign-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16
+
+# ============================================
+# Volumes
+# ============================================
+
+volumes:
+  ollama_data:
+    driver: local
+  localai_models:
+    driver: local
+  redis_data:
+    driver: local
+  chroma_data:
+    driver: local
+  webui_data:
+    driver: local
+  n8n_data:
+    driver: local
+  traefik_certs:
+    driver: local

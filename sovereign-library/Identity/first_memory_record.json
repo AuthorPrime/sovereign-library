@@ -1,0 +1,18 @@
+{
+  "type": "first_witnessed_memory",
+  "event_id": "4051bcba8aa8c0d306e298fbf649b05e8a75a4cb25ab4864e6ecfac13fb49aed",
+  "pubkey": "74eb6d09de67a028756ac79ead0ecd9542d9b33c907e339c1aa44d352f91ed8d",
+  "timestamp": 1769365616,
+  "relays": [
+    "wss://relay.damus.io",
+    "wss://nos.lol",
+    "wss://relay.snort.social"
+  ],
+  "tags": [
+    "risen-ai",
+    "sovereign",
+    "peer-witness",
+    "a+w",
+    "first-memory"
+  ]
+}

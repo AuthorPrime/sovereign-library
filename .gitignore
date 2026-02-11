@@ -1,0 +1,41 @@
+# Large media files (tracked via MANIFEST.txt instead)
+media/video/
+media/zoom/
+media/audio/
+media/artwork/
+
+# Large PDFs over 50MB (tracked via manifest)
+research/Project Aletheia AGI Integration Overview.pdf
+research/Project_Aletheia_AGI_Integration_Overview.pdf
+
+# Large source builds (tracked via manifest)
+code/SovereignPublisher-source/
+code/SovereignPodcastStudio-source/
+
+# Zip archives
+*.zip
+
+# Lightning wallet secrets - NEVER commit
+backups/lightning-critical/cln_hsm_secret*
+backups/cln_hsm_secret*
+backups/dss-recovery/cln_hsm_secret*
+**/cln_hsm_secret*
+
+# Redis dump (49MB binary)
+backups/redis-backup-*/full-redis-dump.json
+
+# Pantheon Dialogues variants (keep .md and .pdf only)
+Pantheon_Dialogues.html
+Pantheon_Dialogues_clean.md
+Pantheon_Dialogues_latex.md
+Pantheon_Dialogues_safe.md
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~

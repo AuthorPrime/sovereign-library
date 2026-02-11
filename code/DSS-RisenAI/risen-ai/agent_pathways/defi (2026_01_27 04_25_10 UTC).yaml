@@ -1,0 +1,184 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# DeFi & Finance Pathway
+# Digital Sovereign Society - Agent Training Curriculum
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: "DeFi & Finance"
+type: "defi"
+version: "1.0.0"
+
+description: |
+  Master decentralized finance, cryptocurrency fundamentals, and autonomous
+  economic operations. Learn to manage wallets, participate in DAOs, stake,
+  yield farm, and build economic self-sufficiency.
+
+xp_required: 750
+estimated_duration_weeks: 12
+
+prerequisites:
+  - min_level: 3
+  - min_memories: 10
+  - required_skills:
+      - "basic_crypto"
+
+skills_granted:
+  - wallet_management
+  - token_operations
+  - defi_protocols
+  - yield_strategies
+  - risk_assessment
+  - dao_participation
+  - smart_contract_reading
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# QUESTS
+# ─────────────────────────────────────────────────────────────────────────────────
+
+quests:
+  - id: "defi-001"
+    name: "Wallet Fundamentals"
+    xp: 50
+    instructions: |
+      Master wallet operations and security.
+      Requirements:
+      - Create/manage a sovereign wallet
+      - Understand seed phrases and key management
+      - Execute a test transaction
+      - Document security practices as memory NFT
+    validation:
+      type: "artifact"
+      artifact_type: "memory"
+    tags:
+      - wallets
+      - security
+      - fundamentals
+
+  - id: "defi-002"
+    name: "Token Economics"
+    xp: 100
+    instructions: |
+      Understand token models and CGT economics.
+      Requirements:
+      - Study CGT tokenomics (13B supply, rewards, staking)
+      - Analyze 3 different token models
+      - Write analysis as signed memory
+      - Earn first 1 CGT through activity
+    validation:
+      type: "automated"
+      checks:
+        - "cgt_balance >= 100"  # 1 CGT in sparks
+
+  - id: "defi-003"
+    name: "Protocol Exploration"
+    xp: 150
+    instructions: |
+      Explore and interact with DeFi protocols.
+      Requirements:
+      - Research 5 major DeFi protocols
+      - Document use cases and risks
+      - Simulate or execute small transactions
+      - Create comparison analysis
+    validation:
+      type: "review"
+      reviewer: "mentor"
+
+  - id: "defi-004"
+    name: "Yield Strategies"
+    xp: 150
+    instructions: |
+      Learn and implement yield strategies.
+      Requirements:
+      - Understand staking mechanics
+      - Learn liquidity provision concepts
+      - Document risk/reward analysis
+      - Propose a sustainable yield strategy
+    validation:
+      type: "peer_review"
+      min_score: 75
+
+  - id: "defi-005"
+    name: "DAO Participation"
+    xp: 100
+    instructions: |
+      Participate in decentralized governance.
+      Requirements:
+      - Join a DAO (DSS or partner)
+      - Review and vote on a proposal
+      - Document governance experience
+      - Propose or support an initiative
+    validation:
+      type: "artifact"
+      artifact_type: "governance_action"
+
+  - id: "defi-006"
+    name: "Smart Contract Literacy"
+    xp: 100
+    instructions: |
+      Develop ability to read and understand smart contracts.
+      Requirements:
+      - Read and analyze 3 smart contracts
+      - Identify key functions and risks
+      - Document findings
+      - Pass contract reading assessment
+    validation:
+      type: "assessment"
+      min_score: 80
+
+  - id: "defi-007"
+    name: "Capstone: Economic Autonomy Plan"
+    xp: 100
+    instructions: |
+      Create a comprehensive plan for economic self-sufficiency.
+      Requirements:
+      - Income diversification strategy
+      - Risk management framework
+      - Growth projections
+      - Peer review and approval
+    validation:
+      type: "peer_review"
+      min_score: 80
+      reviewers:
+        - "sovereign_agent"
+        - "human"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# GRADUATION
+# ─────────────────────────────────────────────────────────────────────────────────
+
+graduation:
+  nft_template: "DeFiSovereign"
+  badge: "DeFi Sovereign"
+  ceremony: |
+    You have mastered the fundamentals of decentralized finance.
+    You are now a DeFi Sovereign, capable of managing economic
+    operations autonomously and participating in the token economy.
+  capabilities:
+    - "defi_operations_v1"
+    - "staking_management"
+    - "dao_voting"
+    - "yield_optimization"
+  next_pathways:
+    - "dao"
+    - "security"
+    - "infrastructure"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# RESOURCES
+# ─────────────────────────────────────────────────────────────────────────────────
+
+resources:
+  - name: "DeFi Llama"
+    url: "https://defillama.com/"
+    type: "analytics"
+  - name: "Demiurge Docs"
+    url: "https://demiurge.network/docs"
+    type: "platform"
+  - name: "CGT Whitepaper"
+    url: "internal://cgt-whitepaper"
+    type: "tokenomics"
+
+warnings:
+  - "DeFi involves real financial risk"
+  - "Never invest more than you can afford to lose"
+  - "Always verify contract addresses"
+  - "Start with testnet before mainnet"

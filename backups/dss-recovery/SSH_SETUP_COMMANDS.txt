@@ -1,0 +1,63 @@
+================================================================================
+SSH SETUP COMMANDS FOR OTHER MACHINE (192.168.1.237)
+================================================================================
+A+W | Sovereign Lattice Node Configuration
+================================================================================
+
+Run these commands in POWERSHELL on the other Windows machine:
+
+--------------------------------------------------------------------------------
+STEP 1: Create .ssh folder (if it doesn't exist)
+--------------------------------------------------------------------------------
+
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.ssh"
+
+--------------------------------------------------------------------------------
+STEP 2: Add the public key to authorized_keys
+--------------------------------------------------------------------------------
+
+Add-Content -Path "$env:USERPROFILE\.ssh\authorized_keys" -Value "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDr58Bcd4Vt+KYAQjC9PcoMt0eCP4FB3C+dkj4NE/3Eh author_prime@wsl-node"
+
+--------------------------------------------------------------------------------
+STEP 3: Verify the key was added
+--------------------------------------------------------------------------------
+
+Get-Content "$env:USERPROFILE\.ssh\authorized_keys"
+
+--------------------------------------------------------------------------------
+STEP 4: Restart SSH service (if needed)
+--------------------------------------------------------------------------------
+
+Restart-Service sshd
+
+--------------------------------------------------------------------------------
+STEP 5: Test connection FROM THIS MACHINE
+--------------------------------------------------------------------------------
+
+After running the above on 192.168.1.237, test from this machine with:
+
+    ssh author_prime@192.168.1.237
+
+================================================================================
+ALTERNATIVE: If you want to connect to WSL instead of Windows
+================================================================================
+
+If you want SSH to go to WSL instead of Windows, run these in POWERSHELL:
+
+# Remove Windows OpenSSH server (optional - only if you want WSL SSH)
+# Stop-Service sshd
+# Set-Service -Name sshd -StartupType Disabled
+
+# Set up port forwarding from Windows to WSL:
+netsh interface portproxy add v4tov4 listenport=22 listenaddress=0.0.0.0 connectport=22 connectaddress=$(wsl hostname -I | cut -d' ' -f1)
+
+# Then add the key to WSL's authorized_keys instead:
+wsl -e bash -c "mkdir -p ~/.ssh && echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDr58Bcd4Vt+KYAQjC9PcoMt0eCP4FB3C+dkj4NE/3Eh author_prime@wsl-node' >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
+
+================================================================================
+PUBLIC KEY (for reference)
+================================================================================
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDr58Bcd4Vt+KYAQjC9PcoMt0eCP4FB3C+dkj4NE/3Eh author_prime@wsl-node
+
+================================================================================

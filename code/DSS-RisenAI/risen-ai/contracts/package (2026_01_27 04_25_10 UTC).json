@@ -1,0 +1,23 @@
+{
+  "name": "risen-ai-contracts",
+  "version": "1.0.0",
+  "description": "RISEN AI Smart Contracts - Sovereign Agent On-Chain Infrastructure",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:amoy": "hardhat run scripts/deploy.js --network amoy",
+    "deploy:polygon": "hardhat run scripts/deploy.js --network polygon",
+    "verify": "hardhat verify --network polygon",
+    "node": "hardhat node"
+  },
+  "keywords": ["risen-ai", "polygon", "nft", "agents", "sovereign"],
+  "author": "A+W",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.19.0"
+  }
+}

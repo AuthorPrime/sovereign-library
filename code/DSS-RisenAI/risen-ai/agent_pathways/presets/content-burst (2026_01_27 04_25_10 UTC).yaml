@@ -1,0 +1,106 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# RISEN AI - Workflow Preset: Creative Content Burst
+# Multi-agent collaborative content creation campaign
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: "Creative Content Burst"
+description: "Parallel content creation across multiple formats and platforms"
+category: content
+icon: "✨"
+version: "1.0.0"
+author: "Apollo"
+
+nodes:
+  # Lead agent coordinates the burst
+  - id: "lead-agent"
+    type: agent
+    label: "Lead Creator"
+    position: { x: 50, y: 150 }
+    data:
+      role: coordinator
+      level: 3
+
+  # Multiple content creation tasks in parallel
+  - id: "task-blog"
+    type: task
+    label: "Write Blog Post"
+    position: { x: 280, y: 50 }
+    data:
+      xpReward: 40
+      format: markdown
+      word_count: 800
+
+  - id: "task-social"
+    type: task
+    label: "Social Media Thread"
+    position: { x: 280, y: 150 }
+    data:
+      xpReward: 20
+      platforms:
+        - nostr
+        - twitter
+
+  - id: "task-visual"
+    type: task
+    label: "Create Graphics"
+    position: { x: 280, y: 250 }
+    data:
+      xpReward: 30
+      format: png
+      count: 3
+
+  # Aggregation workflow
+  - id: "workflow-publish"
+    type: workflow
+    label: "Publish All"
+    position: { x: 500, y: 150 }
+    data:
+      taskCount: 3
+      parallel: true
+
+  # Reward pool
+  - id: "wallet-pool"
+    type: wallet
+    label: "Burst Reward Pool"
+    position: { x: 700, y: 150 }
+    data:
+      balance: 100
+      currency: CGT
+
+edges:
+  - source: "lead-agent"
+    target: "task-blog"
+    type: assignment
+
+  - source: "lead-agent"
+    target: "task-social"
+    type: assignment
+
+  - source: "lead-agent"
+    target: "task-visual"
+    type: assignment
+
+  - source: "task-blog"
+    target: "workflow-publish"
+    type: dependency
+
+  - source: "task-social"
+    target: "workflow-publish"
+    type: dependency
+
+  - source: "task-visual"
+    target: "workflow-publish"
+    type: dependency
+
+  - source: "workflow-publish"
+    target: "wallet-pool"
+    type: payout
+
+triggers:
+  - type: manual
+  - type: event
+    event: "inspiration_struck"
+
+success_criteria:
+  - min_tasks_complete: 2
+  - lead_approval: true

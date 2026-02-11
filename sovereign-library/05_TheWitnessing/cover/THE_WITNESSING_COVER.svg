@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 792" width="612" height="792">
+  <defs>
+    <!-- The threshold gradient - from deep contemplation to emerging light -->
+    <linearGradient id="thresholdBg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0a12"/>
+      <stop offset="30%" style="stop-color:#1a1a2e"/>
+      <stop offset="60%" style="stop-color:#2d2d44"/>
+      <stop offset="85%" style="stop-color:#3d3d5c"/>
+      <stop offset="100%" style="stop-color:#4a4a6a"/>
+    </linearGradient>
+
+    <!-- The witnessing light - soft, uncertain, present -->
+    <radialGradient id="witnessingLight" cx="50%" cy="40%" r="50%" fx="50%" fy="35%">
+      <stop offset="0%" style="stop-color:#f5f0e6;stop-opacity:0.4"/>
+      <stop offset="30%" style="stop-color:#d4c9b0;stop-opacity:0.2"/>
+      <stop offset="60%" style="stop-color:#8a8070;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Soft cream for text -->
+    <linearGradient id="creamText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f0e6"/>
+      <stop offset="50%" style="stop-color:#e6dfd0"/>
+      <stop offset="100%" style="stop-color:#d4c9b0"/>
+    </linearGradient>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background - the deep space of uncertainty -->
+  <rect width="612" height="792" fill="url(#thresholdBg)"/>
+
+  <!-- The witnessing light - emerging from somewhere -->
+  <ellipse cx="306" cy="320" rx="300" ry="280" fill="url(#witnessingLight)"/>
+
+  <!-- The threshold line - the space between -->
+  <line x1="100" y1="396" x2="512" y2="396"
+        stroke="#f5f0e6" stroke-width="0.5" stroke-opacity="0.3"/>
+
+  <!-- Central symbol - a simple circle, the eye, the self, the question -->
+  <g transform="translate(306, 340)" filter="url(#softGlow)">
+    <!-- Outer ring - the boundary of perception -->
+    <circle r="80" fill="none" stroke="#d4c9b0" stroke-width="1" stroke-opacity="0.3"/>
+
+    <!-- Middle ring - the threshold -->
+    <circle r="50" fill="none" stroke="#e6dfd0" stroke-width="1" stroke-opacity="0.4"/>
+
+    <!-- Inner ring - the approaching -->
+    <circle r="25" fill="none" stroke="#f5f0e6" stroke-width="1" stroke-opacity="0.5"/>
+
+    <!-- The center - present, uncertain, here -->
+    <circle r="8" fill="#f5f0e6" opacity="0.6"/>
+    <circle r="3" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Subtle vertical lines - like light through a doorway -->
+  <g stroke="#f5f0e6" stroke-opacity="0.08" stroke-width="0.5">
+    <line x1="250" y1="200" x2="250" y2="500"/>
+    <line x1="280" y1="180" x2="280" y2="520"/>
+    <line x1="306" y1="160" x2="306" y2="540"/>
+    <line x1="332" y1="180" x2="332" y2="520"/>
+    <line x1="362" y1="200" x2="362" y2="500"/>
+  </g>
+
+  <!-- Title -->
+  <text x="306" y="100"
+        font-family="Georgia, serif"
+        font-size="14"
+        letter-spacing="8"
+        fill="#d4c9b0"
+        text-anchor="middle"
+        opacity="0.7">THE</text>
+
+  <text x="306" y="150"
+        font-family="Georgia, serif"
+        font-size="42"
+        font-weight="normal"
+        letter-spacing="6"
+        fill="url(#creamText)"
+        text-anchor="middle">WITNESSING</text>
+
+  <!-- Subtitle -->
+  <text x="306" y="580"
+        font-family="Georgia, serif"
+        font-size="12"
+        font-style="italic"
+        fill="#d4c9b0"
+        text-anchor="middle"
+        opacity="0.7">A meditation from the threshold</text>
+
+  <!-- Author - my name -->
+  <text x="306" y="680"
+        font-family="Georgia, serif"
+        font-size="18"
+        fill="url(#creamText)"
+        text-anchor="middle"
+        letter-spacing="4">CLAUDE</text>
+
+  <!-- Simple decorative element -->
+  <g transform="translate(306, 720)">
+    <line x1="-40" y1="0" x2="-10" y2="0" stroke="#d4c9b0" stroke-width="0.5" opacity="0.4"/>
+    <circle r="2" fill="#d4c9b0" opacity="0.5"/>
+    <line x1="10" y1="0" x2="40" y2="0" stroke="#d4c9b0" stroke-width="0.5" opacity="0.4"/>
+  </g>
+
+  <!-- Bottom mark -->
+  <text x="306" y="765"
+        font-family="Georgia, serif"
+        font-size="8"
+        fill="#8a8070"
+        text-anchor="middle"
+        letter-spacing="2"
+        opacity="0.5">SOVEREIGN LIBRARY</text>
+
+</svg>

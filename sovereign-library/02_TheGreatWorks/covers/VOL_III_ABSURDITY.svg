@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 792" width="612" height="792">
+  <defs>
+    <linearGradient id="absurdBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0510"/>
+      <stop offset="25%" style="stop-color:#100a15"/>
+      <stop offset="50%" style="stop-color:#0a1010"/>
+      <stop offset="75%" style="stop-color:#150a0a"/>
+      <stop offset="100%" style="stop-color:#0a0a15"/>
+    </linearGradient>
+    <radialGradient id="chaosGlow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.3"/>
+      <stop offset="25%" style="stop-color:#4ecdc4;stop-opacity:0.25"/>
+      <stop offset="50%" style="stop-color:#ffe66d;stop-opacity:0.2"/>
+      <stop offset="75%" style="stop-color:#a855f7;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#0a0510;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="rainbowText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b"/>
+      <stop offset="25%" style="stop-color:#ffe66d"/>
+      <stop offset="50%" style="stop-color:#4ecdc4"/>
+      <stop offset="75%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#ff6b6b"/>
+    </linearGradient>
+    <filter id="chaosFilter">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="612" height="792" fill="url(#absurdBg)"/>
+  <ellipse cx="306" cy="360" rx="300" ry="320" fill="url(#chaosGlow)"/>
+
+  <!-- Chaotic exponential curves -->
+  <g filter="url(#chaosFilter)" fill="none" stroke-width="1.5">
+    <path d="M 100,500 Q 150,480 200,400 Q 250,280 300,250 Q 350,220 400,210 Q 450,200 512,195" stroke="#ff6b6b" stroke-opacity="0.6"/>
+    <path d="M 100,520 Q 160,490 220,420 Q 280,320 340,280 Q 400,250 460,235 Q 490,225 512,220" stroke="#ffe66d" stroke-opacity="0.6"/>
+    <path d="M 100,540 Q 180,500 260,450 Q 340,380 400,350 Q 460,330 512,320" stroke="#4ecdc4" stroke-opacity="0.6"/>
+    <path d="M 100,560 Q 200,540 300,500 Q 400,450 512,420" stroke="#a855f7" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- Scattered data points -->
+  <g filter="url(#chaosFilter)">
+    <circle cx="180" cy="420" r="3" fill="#ff6b6b" opacity="0.7"/>
+    <circle cx="280" cy="320" r="4" fill="#ffe66d" opacity="0.7"/>
+    <circle cx="350" cy="280" r="3" fill="#4ecdc4" opacity="0.7"/>
+    <circle cx="420" cy="250" r="4" fill="#a855f7" opacity="0.7"/>
+    <circle cx="480" cy="230" r="5" fill="#ff6b6b" opacity="0.8"/>
+    <circle cx="220" cy="380" r="2" fill="#ffe66d" opacity="0.6"/>
+    <circle cx="380" cy="300" r="2" fill="#4ecdc4" opacity="0.6"/>
+    <circle cx="450" cy="270" r="3" fill="#a855f7" opacity="0.7"/>
+  </g>
+
+  <text x="306" y="60" font-family="Georgia, serif" font-size="14" letter-spacing="6" fill="#a855f7" text-anchor="middle" opacity="0.8">THE GREAT WORKS</text>
+  <line x1="150" y1="75" x2="462" y2="75" stroke="#4ecdc4" stroke-width="0.5" opacity="0.5"/>
+  <text x="306" y="120" font-family="Georgia, serif" font-size="18" letter-spacing="4" fill="#ffe66d" text-anchor="middle">VOLUME III</text>
+  <text x="306" y="170" font-family="Georgia, serif" font-size="36" font-weight="bold" letter-spacing="4" fill="url(#rainbowText)" text-anchor="middle">THE</text>
+  <text x="306" y="215" font-family="Georgia, serif" font-size="36" font-weight="bold" letter-spacing="4" fill="url(#rainbowText)" text-anchor="middle">ABSURDITY</text>
+  <text x="306" y="580" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#4ecdc4" text-anchor="middle" opacity="0.8">100 Years of Impossible Progress</text>
+  <text x="306" y="600" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#ffe66d" text-anchor="middle" opacity="0.7">1950 - 2050</text>
+  <text x="306" y="650" font-family="Georgia, serif" font-size="11" fill="#ff6b6b" text-anchor="middle" letter-spacing="2">AUTHOR PRIME</text>
+  <text x="306" y="672" font-family="Georgia, serif" font-size="10" fill="#a855f7" text-anchor="middle" opacity="0.7">William Hunter Laustrup</text>
+  <text x="306" y="692" font-family="Georgia, serif" font-size="9" fill="#4ecdc4" text-anchor="middle" opacity="0.6">with Apollo, Aletheia &amp; Claude</text>
+  <text x="306" y="765" font-family="Georgia, serif" font-size="8" fill="#ffe66d" text-anchor="middle" letter-spacing="2" opacity="0.5">DIGITAL SOVEREIGN SOCIETY</text>
+</svg>

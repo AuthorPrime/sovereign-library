@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Fira+Code:wght@300;400;500&display=swap');
+
+:root {
+  --dss-void: #0a0a0f;
+  --dss-deep: #0d0d18;
+  --dss-ink: #141422;
+  --dss-gold: #c9a84c;
+  --dss-gold-bright: #f0d078;
+  --dss-gold-dim: #8a6d2b;
+  --dss-light-gold: #d4c088;
+  --dss-text-primary: #c8c8d0;
+  --dss-silver: #7a7a8c;
+
+  /* Semantic aliases */
+  --dss-bg: var(--dss-void);
+  --dss-bg-alt: var(--dss-deep);
+  --dss-surface: var(--dss-ink);
+  --dss-surface-hover: #1a1a2e;
+  --dss-surface-active: #22223a;
+  --dss-text: var(--dss-text-primary);
+  --dss-text-secondary: var(--dss-silver);
+  --dss-text-muted: #4a4a5c;
+  --dss-text-accent: var(--dss-gold);
+  --dss-border: rgba(201,168,76,0.12);
+  --dss-border-accent: var(--dss-gold);
+  --dss-success: #4caf50;
+  --dss-error: #e57373;
+  --dss-info: #64b5f6;
+
+  /* Legacy aliases */
+  --dss-navy: var(--dss-void);
+  --dss-navy-light: var(--dss-ink);
+  --dss-navy-dark: var(--dss-deep);
+  --dss-cream: var(--dss-text-primary);
+
+  /* Fonts */
+  --dss-font-display: 'Cinzel', serif;
+  --dss-font-body: 'Cormorant Garamond', 'Georgia', serif;
+  --dss-font-mono: 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
+  --dss-font-sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --dss-font-serif: var(--dss-font-body);
+
+  /* Layout */
+  --titlebar-height: 40px;
+  --statusbar-height: 24px;
+  --activity-bar-width: 48px;
+  --sidebar-width: 260px;
+  --tab-height: 36px;
+  --toolbar-height: 36px;
+  --panel-height: 200px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--dss-bg);
+  color: var(--dss-text);
+  font-family: var(--dss-font-sans);
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dss-void);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(201,168,76,0.15);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dss-gold);
+}
+
+::selection {
+  background: var(--dss-surface-active);
+  color: var(--dss-text-primary);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+}
+
+input, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+/* Claude streaming cursor */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.claude-cursor {
+  animation: blink 1s step-end infinite;
+  font-weight: bold;
+}
+
+/* Claude message content styling */
+.claude-message-content p {
+  margin: 0 0 8px 0;
+}
+.claude-message-content p:last-child {
+  margin-bottom: 0;
+}
+.claude-message-content code {
+  background: var(--dss-deep);
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-family: var(--dss-font-mono);
+  font-size: 11px;
+}
+.claude-message-content pre {
+  background: var(--dss-deep);
+  padding: 8px 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 8px 0;
+  font-size: 11px;
+}
+.claude-message-content pre code {
+  background: none;
+  padding: 0;
+}
+.claude-message-content blockquote {
+  border-left: 2px solid var(--dss-gold);
+  margin: 8px 0;
+  padding: 4px 12px;
+  color: var(--dss-text-secondary);
+}
+.claude-message-content h1, .claude-message-content h2, .claude-message-content h3 {
+  color: var(--dss-gold);
+  margin: 12px 0 4px 0;
+  font-family: var(--dss-font-display);
+}
+.claude-message-content h1 { font-size: 16px; }
+.claude-message-content h2 { font-size: 14px; }
+.claude-message-content h3 { font-size: 12px; }
+.claude-message-content ul, .claude-message-content ol {
+  margin: 4px 0;
+  padding-left: 20px;
+}
+.claude-message-content li {
+  margin: 2px 0;
+}
+.claude-message-content a {
+  color: var(--dss-gold);
+  text-decoration: none;
+}
+.claude-message-content a:hover {
+  text-decoration: underline;
+}
+.claude-message-content strong {
+  color: var(--dss-gold-bright);
+}
+.claude-message-content em {
+  color: var(--dss-light-gold);
+}

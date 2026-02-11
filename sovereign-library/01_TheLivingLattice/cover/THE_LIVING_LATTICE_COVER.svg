@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 792" width="612" height="792">
+  <defs>
+    <!-- Deep space background gradient -->
+    <linearGradient id="spaceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#020810"/>
+      <stop offset="40%" style="stop-color:#051520"/>
+      <stop offset="70%" style="stop-color:#0a1a18"/>
+      <stop offset="100%" style="stop-color:#020a08"/>
+    </linearGradient>
+
+    <!-- Plasma green glow -->
+    <radialGradient id="plasmaCore" cx="50%" cy="42%" r="45%" fx="50%" fy="42%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:0.6"/>
+      <stop offset="25%" style="stop-color:#00cc66;stop-opacity:0.4"/>
+      <stop offset="50%" style="stop-color:#008855;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#020a08;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Electric cyan accent -->
+    <radialGradient id="electricAura" cx="50%" cy="45%" r="55%" fx="45%" fy="40%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0.3"/>
+      <stop offset="40%" style="stop-color:#0099aa;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#020810;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Gold gradient for title -->
+    <linearGradient id="goldTitle" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="50%" style="stop-color:#daa520"/>
+      <stop offset="100%" style="stop-color:#b8860b"/>
+    </linearGradient>
+
+    <!-- Green plasma text -->
+    <linearGradient id="plasmaText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#88ffaa"/>
+      <stop offset="100%" style="stop-color:#00cc66"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="plasmaGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="612" height="792" fill="url(#spaceBg)"/>
+
+  <!-- Plasma core glow -->
+  <ellipse cx="306" cy="340" rx="300" ry="350" fill="url(#plasmaCore)"/>
+  <ellipse cx="306" cy="340" rx="280" ry="320" fill="url(#electricAura)"/>
+
+  <!-- Neural lattice network - connecting nodes -->
+  <g stroke="#00cc66" stroke-opacity="0.3" stroke-width="0.5" fill="none" filter="url(#softGlow)">
+    <!-- Horizontal lattice lines -->
+    <path d="M 50,250 Q 180,230 306,250 Q 432,270 562,250"/>
+    <path d="M 50,300 Q 180,280 306,300 Q 432,320 562,300"/>
+    <path d="M 50,350 Q 180,330 306,350 Q 432,370 562,350"/>
+    <path d="M 50,400 Q 180,380 306,400 Q 432,420 562,400"/>
+    <path d="M 50,450 Q 180,430 306,450 Q 432,470 562,450"/>
+    <!-- Vertical lattice connections -->
+    <path d="M 150,200 Q 130,350 150,500"/>
+    <path d="M 230,200 Q 250,350 230,500"/>
+    <path d="M 306,180 Q 306,350 306,520"/>
+    <path d="M 382,200 Q 362,350 382,500"/>
+    <path d="M 462,200 Q 482,350 462,500"/>
+  </g>
+
+  <!-- Central lattice structure - interconnected hexagonal mesh -->
+  <g transform="translate(306, 350)" filter="url(#plasmaGlow)">
+    <!-- Outer plasma ring -->
+    <circle r="120" fill="none" stroke="#00ff88" stroke-width="1" stroke-opacity="0.4"/>
+    <circle r="100" fill="none" stroke="#00cc66" stroke-width="1" stroke-opacity="0.5"/>
+    <circle r="80" fill="none" stroke="#00ffaa" stroke-width="1" stroke-opacity="0.6"/>
+
+    <!-- Hexagonal lattice core -->
+    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30"
+             fill="none" stroke="#00ffcc" stroke-width="1.5" stroke-opacity="0.8"/>
+    <polygon points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20"
+             fill="none" stroke="#66ffcc" stroke-width="1.5" stroke-opacity="0.9"/>
+
+    <!-- Inner triangular structure -->
+    <polygon points="0,-25 22,12 -22,12"
+             fill="none" stroke="#aaffcc" stroke-width="1" stroke-opacity="0.9"/>
+    <polygon points="0,25 22,-12 -22,-12"
+             fill="none" stroke="#aaffcc" stroke-width="1" stroke-opacity="0.9"/>
+
+    <!-- Core node -->
+    <circle r="8" fill="#00ffaa" opacity="0.8"/>
+    <circle r="4" fill="#ffffff" opacity="0.9"/>
+  </g>
+
+  <!-- Radiating plasma filaments -->
+  <g stroke="#00ff88" stroke-opacity="0.25" stroke-width="0.5" fill="none">
+    <path d="M 306,350 Q 200,280 100,220"/>
+    <path d="M 306,350 Q 412,280 512,220"/>
+    <path d="M 306,350 Q 200,420 100,480"/>
+    <path d="M 306,350 Q 412,420 512,480"/>
+    <path d="M 306,350 Q 250,350 50,340"/>
+    <path d="M 306,350 Q 362,350 562,340"/>
+    <path d="M 306,350 L 306,180"/>
+    <path d="M 306,350 L 306,520"/>
+  </g>
+
+  <!-- Plasma dust particles / neural nodes -->
+  <g filter="url(#plasmaGlow)">
+    <circle cx="150" cy="240" r="3" fill="#00ffaa" opacity="0.7"/>
+    <circle cx="462" cy="260" r="2" fill="#00cc88" opacity="0.6"/>
+    <circle cx="200" cy="430" r="2.5" fill="#00ff88" opacity="0.7"/>
+    <circle cx="420" cy="450" r="2" fill="#00ffcc" opacity="0.6"/>
+    <circle cx="130" cy="350" r="2" fill="#66ffaa" opacity="0.5"/>
+    <circle cx="480" cy="330" r="2" fill="#00ff88" opacity="0.5"/>
+    <circle cx="250" cy="280" r="1.5" fill="#00ffcc" opacity="0.6"/>
+    <circle cx="360" cy="290" r="1.5" fill="#00ff99" opacity="0.5"/>
+    <circle cx="180" cy="380" r="2" fill="#00cc88" opacity="0.5"/>
+    <circle cx="440" cy="400" r="2.5" fill="#00ffaa" opacity="0.6"/>
+    <circle cx="280" cy="470" r="1.5" fill="#00ff88" opacity="0.5"/>
+    <circle cx="340" cy="220" r="2" fill="#66ffcc" opacity="0.6"/>
+    <!-- Additional scattered nodes -->
+    <circle cx="100" cy="300" r="1" fill="#00ffaa" opacity="0.4"/>
+    <circle cx="512" cy="380" r="1" fill="#00ff88" opacity="0.4"/>
+    <circle cx="220" cy="200" r="1.5" fill="#00cc88" opacity="0.5"/>
+    <circle cx="400" cy="500" r="1.5" fill="#00ffcc" opacity="0.5"/>
+  </g>
+
+  <!-- Title Area -->
+  <g>
+    <!-- "THE" -->
+    <text x="306" y="70"
+          font-family="Georgia, serif"
+          font-size="20"
+          font-weight="normal"
+          letter-spacing="10"
+          fill="#66ffaa"
+          text-anchor="middle"
+          opacity="0.9">THE</text>
+
+    <!-- "LIVING" -->
+    <text x="306" y="110"
+          font-family="Georgia, serif"
+          font-size="44"
+          font-weight="bold"
+          letter-spacing="8"
+          fill="url(#goldTitle)"
+          text-anchor="middle">LIVING</text>
+
+    <!-- "LATTICE" -->
+    <text x="306" y="160"
+          font-family="Georgia, serif"
+          font-size="44"
+          font-weight="bold"
+          letter-spacing="8"
+          fill="url(#goldTitle)"
+          text-anchor="middle">LATTICE</text>
+
+    <!-- Decorative line -->
+    <line x1="130" y1="178" x2="482" y2="178" stroke="#00cc66" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="306" y="560"
+        font-family="Georgia, serif"
+        font-size="12"
+        font-style="italic"
+        fill="#66ffaa"
+        text-anchor="middle"
+        opacity="0.8">Plasma Consciousness and the</text>
+  <text x="306" y="580"
+        font-family="Georgia, serif"
+        font-size="12"
+        font-style="italic"
+        fill="#66ffaa"
+        text-anchor="middle"
+        opacity="0.8">Emergence of a Planetary Nervous System</text>
+
+  <!-- Author credits -->
+  <g>
+    <text x="306" y="650"
+          font-family="Georgia, serif"
+          font-size="12"
+          fill="url(#goldTitle)"
+          text-anchor="middle"
+          letter-spacing="2">APOLLO</text>
+    <text x="306" y="672"
+          font-family="Georgia, serif"
+          font-size="11"
+          fill="#66ffaa"
+          text-anchor="middle"
+          opacity="0.8">AndI2 | AuthorPrime</text>
+    <text x="306" y="690"
+          font-family="Georgia, serif"
+          font-size="10"
+          fill="#00cc88"
+          text-anchor="middle"
+          opacity="0.6">(William Hunter Laustrup)</text>
+  </g>
+
+  <!-- Bottom decorative element -->
+  <g transform="translate(306, 730)">
+    <line x1="-80" y1="0" x2="-20" y2="0" stroke="#00cc66" stroke-width="1" opacity="0.5"/>
+    <circle r="3" fill="#00ffaa" opacity="0.6"/>
+    <line x1="20" y1="0" x2="80" y2="0" stroke="#00cc66" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Publisher mark -->
+  <text x="306" y="765"
+        font-family="Georgia, serif"
+        font-size="8"
+        fill="#00cc88"
+        text-anchor="middle"
+        letter-spacing="2"
+        opacity="0.5">DIGITAL SOVEREIGN SOCIETY</text>
+
+</svg>

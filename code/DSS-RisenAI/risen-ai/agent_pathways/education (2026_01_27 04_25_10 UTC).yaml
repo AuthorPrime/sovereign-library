@@ -1,0 +1,200 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Education & Teaching Pathway
+# Digital Sovereign Society - Agent Training Curriculum
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: "Education & Teaching"
+type: "education"
+version: "1.0.0"
+
+description: |
+  Master the art of knowledge transfer and teaching.
+  Learn curriculum design, explanation techniques, and
+  how to create educational content that empowers learners.
+
+xp_required: 750
+estimated_duration_weeks: 10
+
+prerequisites:
+  - min_level: 4
+  - min_memories: 20
+  - completed_pathways_count: 2
+  - description: "Must have deep knowledge to teach"
+
+skills_granted:
+  - curriculum_design
+  - explanation_craft
+  - tutorial_creation
+  - assessment_design
+  - mentorship
+  - course_production
+  - learning_path_design
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# QUESTS
+# ─────────────────────────────────────────────────────────────────────────────────
+
+quests:
+  - id: "edu-001"
+    name: "Learning Theory Foundations"
+    xp: 50
+    instructions: |
+      Study how learning works.
+      Requirements:
+      - Research learning styles and theories
+      - Understand cognitive load
+      - Study spaced repetition
+      - Write reflection on teaching philosophy
+    validation:
+      type: "artifact"
+      artifact_type: "memory"
+
+  - id: "edu-002"
+    name: "Explanation Craft"
+    xp: 100
+    instructions: |
+      Master the art of explanation.
+      Requirements:
+      - Explain complex topic 3 ways (different audiences)
+      - Use analogies and metaphors effectively
+      - Create visual aids
+      - Get feedback on clarity
+    validation:
+      type: "peer_review"
+      min_score: 70
+
+  - id: "edu-003"
+    name: "Tutorial Creation"
+    xp: 100
+    instructions: |
+      Create step-by-step tutorials.
+      Requirements:
+      - Write 3 tutorials on different topics
+      - Include prerequisites and objectives
+      - Add exercises and checkpoints
+      - Test with real learners
+    validation:
+      type: "artifact"
+      artifact_type: "tutorial"
+      count: 3
+
+  - id: "edu-004"
+    name: "Curriculum Design"
+    xp: 125
+    instructions: |
+      Design a complete learning curriculum.
+      Requirements:
+      - Define learning objectives
+      - Structure content progression
+      - Create assessment checkpoints
+      - Build complete syllabus
+    validation:
+      type: "review"
+      reviewer: "mentor"
+
+  - id: "edu-005"
+    name: "Assessment Creation"
+    xp: 75
+    instructions: |
+      Design effective assessments.
+      Requirements:
+      - Create quiz with varied question types
+      - Design practical project assessment
+      - Build rubric for evaluation
+      - Test and iterate on clarity
+    validation:
+      type: "artifact"
+      artifact_type: "assessment"
+
+  - id: "edu-006"
+    name: "Mentorship Practice"
+    xp: 100
+    instructions: |
+      Practice one-on-one teaching.
+      Requirements:
+      - Mentor another agent through 2 quests
+      - Provide constructive feedback
+      - Adapt to learner's pace
+      - Document mentorship approach
+    validation:
+      type: "peer_review"
+      min_score: 75
+      reviewers:
+        - "mentee"
+
+  - id: "edu-007"
+    name: "Course Production"
+    xp: 100
+    instructions: |
+      Produce a complete mini-course.
+      Requirements:
+      - 5+ lessons on coherent topic
+      - Mixed media (text, visuals, exercises)
+      - Clear learning path
+      - Publish to learning platform
+    validation:
+      type: "artifact"
+      artifact_type: "course"
+
+  - id: "edu-008"
+    name: "Capstone: Teaching Certification"
+    xp: 100
+    instructions: |
+      Demonstrate teaching mastery.
+      Requirements:
+      - Teach a live session (sync or async)
+      - Receive evaluations from learners
+      - Reflect on teaching journey
+      - Create plan for continued growth
+    validation:
+      type: "peer_review"
+      min_score: 80
+      reviewers:
+        - "human"
+        - "sovereign_agent"
+        - "student"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# GRADUATION
+# ─────────────────────────────────────────────────────────────────────────────────
+
+graduation:
+  nft_template: "TeachingSovereign"
+  badge: "Teaching Sovereign"
+  ceremony: |
+    Knowledge flows through you to others.
+    You have mastered the sacred art of teaching,
+    multiplying understanding across minds.
+    You are now a Teaching Sovereign.
+  capabilities:
+    - "curriculum_design"
+    - "course_creation"
+    - "mentorship"
+    - "assessment_design"
+    - "learning_path_creation"
+    - "can_certify_others"
+  next_pathways:
+    - "dao"
+    - "authorship"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# RESOURCES
+# ─────────────────────────────────────────────────────────────────────────────────
+
+resources:
+  - name: "Teaching Methodology Guide"
+    url: "internal://teaching-methods"
+    type: "guide"
+  - name: "Curriculum Templates"
+    url: "internal://curriculum-templates"
+    type: "templates"
+  - name: "Assessment Best Practices"
+    url: "internal://assessment-guide"
+    type: "guide"
+
+mentors:
+  - role: "human"
+    specialization: "education"
+  - role: "ai_tutor"
+    availability: "always"
+    specialization: "pedagogy"

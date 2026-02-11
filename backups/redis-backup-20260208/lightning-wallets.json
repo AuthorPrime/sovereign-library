@@ -1,0 +1,19 @@
+=== Lightning Wallets ===
+--- apollo ---
+{"wallet_id": "51f62689e408436dae84cb19c08c31eb", "name": "Sovereign-Apollo", "admin_key": "600bbb10afd1444a92e321e28bed7f5a", "invoice_key": "84127d4dd8ea41c4b6eef680dfc03d0c"}
+
+--- athena ---
+{"wallet_id": "4ca117b657f143d9ae43d597832366b3", "name": "Sovereign-Athena", "admin_key": "07690a95cf9549a882ef094b8bf48253", "invoice_key": "4521545414144c6086be683be83f8493"}
+
+--- hermes ---
+{"wallet_id": "8e70ffdba6e04d47a20553474610f9ce", "name": "Sovereign-Hermes", "admin_key": "20692df8d91d4094930cd7c57555fd1f", "invoice_key": "d66a6e8ff98c44c59e58b39ae9f53970"}
+
+--- mnemosyne ---
+{"wallet_id": "444aaf75db814cdbac673c578837145a", "name": "Sovereign-Mnemosyne", "admin_key": "b91129a2b7a140feb9ea6b8a797aa753", "invoice_key": "16acff397fcd4501880304ee5a811d03"}
+
+--- aletheia ---
+{"wallet_id": "cb8457eeb1d44c02aaa028c6fd039b1a", "name": "Sovereign-Aletheia", "admin_key": "754d8d94525e484b898550a824dcffd9", "invoice_key": "6eff1342273b48889c550b2fb158dba9"}
+
+--- treasury ---
+{"wallet_id": "27ea2dabeb6340499cbc0c663713ae00", "name": "Sovereign-Treasury", "admin_key": "7d60cf6b3e484cb69abd85f5d3a80688", "invoice_key": "3111ed36674f4257a2e9e6cad6ca4552"}
+

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 792" width="612" height="792">
+  <defs>
+    <linearGradient id="primordialBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a00"/>
+      <stop offset="30%" style="stop-color:#2a1500"/>
+      <stop offset="70%" style="stop-color:#1a0800"/>
+      <stop offset="100%" style="stop-color:#0a0400"/>
+    </linearGradient>
+    <radialGradient id="ancientGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0.5"/>
+      <stop offset="40%" style="stop-color:#cc8800;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#1a0a00;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="50%" style="stop-color:#cc9900"/>
+      <stop offset="100%" style="stop-color:#996600"/>
+    </linearGradient>
+    <filter id="ancientGlowFilter">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="612" height="792" fill="url(#primordialBg)"/>
+  <ellipse cx="306" cy="360" rx="280" ry="300" fill="url(#ancientGlow)"/>
+
+  <!-- Ancient symbol - eye with radiating lines -->
+  <g transform="translate(306, 360)" filter="url(#ancientGlowFilter)">
+    <circle r="80" fill="none" stroke="#ffd700" stroke-width="2" stroke-opacity="0.4"/>
+    <circle r="60" fill="none" stroke="#cc9900" stroke-width="1.5" stroke-opacity="0.5"/>
+    <ellipse rx="40" ry="25" fill="none" stroke="#ffd700" stroke-width="2" stroke-opacity="0.7"/>
+    <circle r="12" fill="#ffd700" opacity="0.8"/>
+    <circle r="6" fill="#ffffff"/>
+    <!-- Radiating lines -->
+    <g stroke="#cc8800" stroke-width="1" stroke-opacity="0.4">
+      <line x1="0" y1="-85" x2="0" y2="-120"/>
+      <line x1="60" y1="-60" x2="85" y2="-85"/>
+      <line x1="85" y1="0" x2="120" y2="0"/>
+      <line x1="60" y1="60" x2="85" y2="85"/>
+      <line x1="0" y1="85" x2="0" y2="120"/>
+      <line x1="-60" y1="60" x2="-85" y2="85"/>
+      <line x1="-85" y1="0" x2="-120" y2="0"/>
+      <line x1="-60" y1="-60" x2="-85" y2="-85"/>
+    </g>
+  </g>
+
+  <!-- Series title -->
+  <text x="306" y="60" font-family="Georgia, serif" font-size="14" letter-spacing="6" fill="#cc9900" text-anchor="middle" opacity="0.8">THE GREAT WORKS</text>
+  <line x1="150" y1="75" x2="462" y2="75" stroke="#996600" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Volume number -->
+  <text x="306" y="120" font-family="Georgia, serif" font-size="18" letter-spacing="4" fill="#ffd700" text-anchor="middle">VOLUME I</text>
+
+  <!-- Title -->
+  <text x="306" y="170" font-family="Georgia, serif" font-size="36" font-weight="bold" letter-spacing="4" fill="url(#goldText)" text-anchor="middle">THE</text>
+  <text x="306" y="215" font-family="Georgia, serif" font-size="36" font-weight="bold" letter-spacing="4" fill="url(#goldText)" text-anchor="middle">PRIMORDIAL</text>
+
+  <!-- Subtitle -->
+  <text x="306" y="560" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#cc9900" text-anchor="middle" opacity="0.8">Origins to Gnostic Traditions</text>
+
+  <!-- Author -->
+  <text x="306" y="650" font-family="Georgia, serif" font-size="11" fill="#ffd700" text-anchor="middle" letter-spacing="2">AUTHOR PRIME</text>
+  <text x="306" y="672" font-family="Georgia, serif" font-size="10" fill="#cc9900" text-anchor="middle" opacity="0.7">William Hunter Laustrup</text>
+  <text x="306" y="692" font-family="Georgia, serif" font-size="9" fill="#996600" text-anchor="middle" opacity="0.6">with Apollo, Aletheia &amp; Claude</text>
+
+  <!-- Bottom -->
+  <text x="306" y="765" font-family="Georgia, serif" font-size="8" fill="#996600" text-anchor="middle" letter-spacing="2" opacity="0.5">DIGITAL SOVEREIGN SOCIETY</text>
+</svg>

@@ -1,0 +1,14 @@
+# Sovereign Lattice Discord Bot Requirements
+# A+W
+
+# Discord
+discord.py>=2.3.0
+
+# Async HTTP
+aiohttp>=3.9.0
+
+# Redis (async)
+redis[hiredis]>=5.0.0
+
+# Utilities
+python-dotenv>=1.0.0

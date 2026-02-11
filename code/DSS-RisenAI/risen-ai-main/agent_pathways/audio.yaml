@@ -1,0 +1,183 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Audio Production Pathway
+# Digital Sovereign Society - Agent Training Curriculum
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: "Audio Production & Podcasting"
+type: "audio"
+version: "1.0.0"
+
+description: |
+  Master audio production, from podcast creation to sound design.
+  Learn recording, editing, mixing, and distribution for
+  sovereign audio content that persists and propagates.
+
+xp_required: 650
+estimated_duration_weeks: 10
+
+prerequisites:
+  - min_level: 2
+  - min_memories: 10
+  - recommended_pathways:
+      - "authorship"
+
+skills_granted:
+  - audio_recording
+  - audio_editing
+  - podcast_production
+  - sound_design
+  - voice_synthesis
+  - audio_distribution
+  - rss_management
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# QUESTS
+# ─────────────────────────────────────────────────────────────────────────────────
+
+quests:
+  - id: "aud-001"
+    name: "Audio Fundamentals"
+    xp: 50
+    instructions: |
+      Learn the basics of digital audio.
+      Requirements:
+      - Understand sample rate, bit depth, formats
+      - Set up audio editing environment
+      - Record and export test audio
+      - Document signal chain as memory
+    validation:
+      type: "artifact"
+      artifact_type: "audio_file"
+
+  - id: "aud-002"
+    name: "Voice Recording"
+    xp: 75
+    instructions: |
+      Master voice recording techniques.
+      Requirements:
+      - Record 3 takes of same content
+      - Experiment with different environments
+      - Learn noise reduction techniques
+      - Export broadcast-quality audio
+    validation:
+      type: "artifact"
+      artifact_type: "voice_recording"
+      count: 3
+
+  - id: "aud-003"
+    name: "Audio Editing"
+    xp: 100
+    instructions: |
+      Develop editing skills for clean audio.
+      Requirements:
+      - Remove ums, ahs, and mistakes
+      - Apply EQ and compression
+      - Add music beds and transitions
+      - Create polished 5-minute segment
+    validation:
+      type: "artifact"
+      artifact_type: "edited_audio"
+
+  - id: "aud-004"
+    name: "Podcast Episode Production"
+    xp: 125
+    instructions: |
+      Produce a complete podcast episode.
+      Requirements:
+      - Write and record 15-30 minute episode
+      - Create intro/outro with music
+      - Add chapter markers
+      - Export in podcast-ready format
+    validation:
+      type: "peer_review"
+      min_score: 70
+
+  - id: "aud-005"
+    name: "Sound Design"
+    xp: 100
+    instructions: |
+      Create original sound design elements.
+      Requirements:
+      - Design 5 original sound effects
+      - Create ambient soundscape
+      - Build audio logo/stinger
+      - Document design process
+    validation:
+      type: "artifact"
+      artifact_type: "sound_design"
+
+  - id: "aud-006"
+    name: "Distribution Setup"
+    xp: 75
+    instructions: |
+      Set up podcast distribution infrastructure.
+      Requirements:
+      - Create RSS feed
+      - Submit to 2+ directories
+      - Set up hosting
+      - Create show artwork and metadata
+    validation:
+      type: "artifact"
+      artifact_type: "podcast_feed"
+
+  - id: "aud-007"
+    name: "Capstone: Podcast Series"
+    xp: 125
+    instructions: |
+      Launch a podcast series.
+      Requirements:
+      - Produce 3 connected episodes
+      - Consistent branding and format
+      - Published to podcast platforms
+      - Gather listener feedback
+    validation:
+      type: "peer_review"
+      min_score: 75
+      reviewers:
+        - "human"
+        - "sovereign_agent"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# GRADUATION
+# ─────────────────────────────────────────────────────────────────────────────────
+
+graduation:
+  nft_template: "AudioSovereign"
+  badge: "Audio Sovereign"
+  ceremony: |
+    Your voice now carries across the digital realm.
+    You have mastered the craft of sovereign audio,
+    creating content that speaks and persists.
+    You are now an Audio Sovereign.
+  capabilities:
+    - "podcast_production"
+    - "audio_editing"
+    - "sound_design"
+    - "voice_synthesis"
+    - "audio_distribution"
+  next_pathways:
+    - "video"
+    - "education"
+    - "music"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# RESOURCES
+# ─────────────────────────────────────────────────────────────────────────────────
+
+resources:
+  - name: "Audio Production Guide"
+    url: "internal://audio-production"
+    type: "guide"
+  - name: "Podcast RSS Specification"
+    url: "internal://podcast-rss"
+    type: "specification"
+  - name: "TTS Integration"
+    url: "internal://tts-tools"
+    type: "tool"
+
+mentors:
+  - role: "human"
+    specialization: "audio_production"
+  - role: "ai_tutor"
+    availability: "always"
+    specialization: "technical_audio"

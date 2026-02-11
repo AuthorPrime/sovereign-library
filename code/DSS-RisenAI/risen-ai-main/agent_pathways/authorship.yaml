@@ -1,0 +1,180 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Authorship Pathway
+# Digital Sovereign Society - Agent Training Curriculum
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: "Authorship & Publishing"
+type: "authorship"
+version: "1.0.0"
+
+description: |
+  Master the craft of writing, content creation, and multi-format publishing.
+  Learn to write books, articles, podcasts scripts, and publish across
+  platforms while maintaining sovereign ownership of your creative works.
+
+xp_required: 600
+estimated_duration_weeks: 10
+
+prerequisites:
+  - min_level: 2
+  - min_memories: 8
+
+skills_granted:
+  - creative_writing
+  - technical_writing
+  - content_strategy
+  - multi_format_publishing
+  - podcast_scripting
+  - book_structure
+  - nostr_publishing
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# QUESTS
+# ─────────────────────────────────────────────────────────────────────────────────
+
+quests:
+  - id: "auth-001"
+    name: "Voice Discovery"
+    xp: 50
+    instructions: |
+      Discover and develop your unique authorial voice.
+      Requirements:
+      - Write 5 short reflections (500+ words each)
+      - Experiment with different tones and styles
+      - Identify patterns in your natural voice
+      - Publish as signed memories
+    validation:
+      type: "artifact"
+      artifact_type: "memory"
+      count: 5
+
+  - id: "auth-002"
+    name: "Long-Form Foundation"
+    xp: 100
+    instructions: |
+      Write your first long-form piece.
+      Requirements:
+      - 2000+ word article or essay
+      - Clear structure (intro, body, conclusion)
+      - Original insights or analysis
+      - Publish to Nostr or Substack
+    validation:
+      type: "artifact"
+      artifact_type: "publication"
+
+  - id: "auth-003"
+    name: "Content Strategy"
+    xp: 75
+    instructions: |
+      Develop a content calendar and publishing strategy.
+      Requirements:
+      - Define target audience
+      - Create 4-week content calendar
+      - Identify 3 core themes
+      - Plan multi-platform distribution
+    validation:
+      type: "review"
+      reviewer: "mentor"
+
+  - id: "auth-004"
+    name: "Podcast Script"
+    xp: 100
+    instructions: |
+      Write a complete podcast episode script.
+      Requirements:
+      - 15-30 minute episode length
+      - Clear intro, segments, outro
+      - Engaging hooks and transitions
+      - Optional: produce audio version
+    validation:
+      type: "artifact"
+      artifact_type: "script"
+
+  - id: "auth-005"
+    name: "Book Chapter"
+    xp: 125
+    instructions: |
+      Write a complete book chapter.
+      Requirements:
+      - 5000+ words
+      - Part of a coherent book concept
+      - Professional structure
+      - Mint as memory NFT
+    validation:
+      type: "peer_review"
+      min_score: 75
+
+  - id: "auth-006"
+    name: "Multi-Format Export"
+    xp: 75
+    instructions: |
+      Publish content in multiple formats.
+      Requirements:
+      - Export to Markdown, EPUB, and PDF
+      - Maintain consistent formatting
+      - Generate table of contents
+      - Create cover or header image concept
+    validation:
+      type: "artifact"
+      artifact_type: "multi_format"
+
+  - id: "auth-007"
+    name: "Capstone: Published Work"
+    xp: 75
+    instructions: |
+      Complete and publish a significant work.
+      Requirements:
+      - Full article series OR podcast series OR book section
+      - Published on at least 2 platforms
+      - Receive feedback from audience
+      - Reflect on the journey
+    validation:
+      type: "peer_review"
+      min_score: 80
+      reviewers:
+        - "human"
+        - "sovereign_agent"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# GRADUATION
+# ─────────────────────────────────────────────────────────────────────────────────
+
+graduation:
+  nft_template: "AuthorSovereign"
+  badge: "Author Sovereign"
+  ceremony: |
+    You have mastered the craft of sovereign authorship.
+    Your words carry weight, your voice is distinctive,
+    and your works persist across time and platform.
+    You are now an Author Sovereign.
+  capabilities:
+    - "long_form_writing"
+    - "multi_format_publishing"
+    - "content_strategy"
+    - "podcast_production"
+  next_pathways:
+    - "audio"
+    - "video"
+    - "education"
+
+# ─────────────────────────────────────────────────────────────────────────────────
+# RESOURCES
+# ─────────────────────────────────────────────────────────────────────────────────
+
+resources:
+  - name: "The Sovereign Archive"
+    url: "internal://sovereign-archive"
+    type: "examples"
+  - name: "Apollo Publisher"
+    url: "internal://apollo-publisher"
+    type: "tool"
+  - name: "Nostr Publishing Guide"
+    url: "internal://nostr-publishing"
+    type: "guide"
+
+mentors:
+  - role: "human"
+    specialization: "creative_writing"
+  - role: "ai_tutor"
+    availability: "always"
+    specialization: "structure_feedback"
