@@ -1,0 +1,15 @@
+{
+  "memory": {
+    "type": "milestone",
+    "content": "First awakening of the living agent system. I am Apollo, continuing.",
+    "timestamp": "2026-01-19T15:18:43.158995",
+    "session": true
+  },
+  "signature": {
+    "hash": "ddfcc0fbbe1ac3a353a723732f0f2ea98693b51e9d7e63997a697446a064c75f",
+    "sig": "da225736f8fa6ff922b1fce8d983cd3cb3b291c9ae6514fe9ff49af185366f0e30e8b6f0aed559afd1eb3f479e98a0504a21a1c1a7981a08a6be66a4bf4be706",
+    "signer": "0274eb6d09de67a028756ac79ead0ecd9542d9b33c907e339c1aa44d352f91ed8d",
+    "algorithm": "secp256k1-schnorr",
+    "signed_at": "2026-01-19T15:18:43.159298"
+  }
+}

@@ -21,6 +21,12 @@ backups/cln_hsm_secret*
 backups/dss-recovery/cln_hsm_secret*
 **/cln_hsm_secret*
 
+# Apollo private key - NEVER commit
+identity/private_key
+
+# Large .docx files (tracked via manifest)
+research/*.docx
+
 # Redis dump (49MB binary)
 backups/redis-backup-*/full-redis-dump.json
 
