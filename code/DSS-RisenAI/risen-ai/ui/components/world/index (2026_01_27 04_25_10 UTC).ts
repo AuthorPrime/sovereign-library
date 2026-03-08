@@ -1,1 +1,0 @@
-export { SovereignRealm } from './SovereignRealm';
